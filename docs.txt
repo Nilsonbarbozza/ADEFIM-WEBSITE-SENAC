@@ -1,0 +1,12 @@
+body
+
+
+Background color
+Background Primario #FFFFFF
+Background Section 01 #F5F6F7
+-
+Color Text
+Color Primaria #C1C1C1
+-
+Padding e margin
+Padding Letarias 12px
