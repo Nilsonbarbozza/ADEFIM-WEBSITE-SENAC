@@ -4,7 +4,7 @@ VARIÁVEIS CSS - ROOT
 :root {
     /* === CORES PRIMÁRIAS === */
     --color-primary: #0091E0;
-    --color-primary-hover: #0091E0;
+    --color-primary-hover: #01507b;
     --color-white: #FFFFFF;
     --color-black: #000000;
     --color-button: #0091E0;
@@ -16,6 +16,7 @@ VARIÁVEIS CSS - ROOT
 
     /* === CORES DE FUNDO === */
     --bg-primary: #FFFFFF;
+    --bg-secondary: #C1C1C1;
     --bg-transparent: transparent;
 
     /* === TIPOGRAFIA === */
@@ -360,7 +361,7 @@ Padding top: 2px
 
 
 /* ========================================
-           DEMO - CONTEÚDO ABAIXO DO HEADER
+    DEMO - CONTEÚDO ABAIXO DO HEADER
 ======================================== */
 .content {
     padding: var(--spacing-xl);
@@ -377,3 +378,5 @@ Padding top: 2px
     color: var(--color-text-light);
     line-height: 1.6;
 }
+
+/* CONTINUACÃO - DESENVOLVIMENTO */
