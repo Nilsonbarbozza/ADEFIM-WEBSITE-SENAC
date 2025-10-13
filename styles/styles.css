@@ -1,8 +1,379 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0px;
-    background-color: F9F9F9;
+/* ========================================
+VARIÁVEIS CSS - ROOT
+======================================== */
+:root {
+    /* === CORES PRIMÁRIAS === */
+    --color-primary: #0091E0;
+    --color-primary-hover: #0091E0;
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-button: #0091E0;
+
+    /* === CORES DE TEXTO === */
+    --color-text-primary: #C1C1C1;
+    --color-text-dark: #333333;
+    --color-text-light: #666666;
+
+    /* === CORES DE FUNDO === */
+    --bg-primary: #FFFFFF;
+    --bg-transparent: transparent;
+
+    /* === TIPOGRAFIA === */
+    --font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-size-nav: 16px;
+    --font-size-base: 16px;
+    --font-size-sm: 14px;
+
+    /* === DIMENSÕES DO HEADER === */
+    --header-height: 68px;
+    --logo-width: 169px;
+    --logo-padding: 12px;
+    --nav-width: 700px;
+    --nav-padding-right: 129px;
+
+    /* === BOTÃO DOAR === */
+    --btn-donate-width: 116px;
+    --btn-donate-height: 44px;
+    --btn-donate-padding-x: 12px;
+    --btn-donate-padding-top: 2px;
+
+    /* === ANIMAÇÕES === */
+    --transition-speed: 0.3s;
+    --transition-ease: ease-in-out;
+
+    /* === BORDAS === */
+    --border-hover-height: 2px;
+    --border-radius: 4px;
+
+    /* === ESPAÇAMENTOS === */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 12px;
+    --spacing-lg: 16px;
+    --spacing-xl: 24px;
+
 }
-h1 {
-    color: blue;
+
+/* ========================================
+           RESET BÁSICO
+======================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    color: var(--color-text-dark);
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+/* ========================================
+           HEADER PRINCIPAL
+           Largura: 100%
+           Altura: 68px
+           Background: #FFFFFF
+======================================== */
+.top-navigation {
+    width: 100%;
+    height: var(--header-height);
+    background-color: var(--bg-primary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* ========================================
+           LOGO CONTAINER
+           Largura: 220px
+           Altura: 68px
+           Padding: 12px
+======================================== */
+.site-logo {
+    width: var(--logo-width);
+    height: var(--header-height);
+    padding: var(--logo-padding);
+    margin-left: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity var(--transition-speed) var(--transition-ease);
+}
+
+.site-logo:hover {
+    opacity: 0.85;
+}
+
+.site-logo img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* ========================================
+           NAVEGAÇÃO PRINCIPAL
+           Largura: 700px
+           Altura: 68px
+           Padding-right: 129px
+======================================== */
+.nav-menu {
+    width: var(--nav-width);
+    height: var(--header-height);
+    padding-right: var(--nav-padding-right);
+}
+
+.nav-menu>ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    gap: var(--spacing-xl);
+}
+
+/* ========================================
+        ITENS DO MENU
+======================================== */
+.nav-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+/* ========================================
+           LINKS DE NAVEGAÇÃO
+           Cor: #C1C1C1
+           Font: Roboto 16px
+           Hover: Border-bottom 2px
+======================================== */
+.nav-link {
+    color: var(--color-black);
+    font-size: var(--font-size-nav);
+    font-weight: 400;
+    padding: 0 var(--spacing-sm);
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    transition: color var(--transition-speed) var(--transition-ease);
+    white-space: nowrap;
+}
+
+
+/* Efeito Hover - Border Bottom de 2px */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: var(--border-hover-height);
+    background-color: var(--color-primary);
+    transition: width var(--transition-speed) var(--transition-ease);
+}
+
+.nav-link:hover {
+    color: var(--color-text-dark);
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* ========================================
+    BOTÃO DROPDOWN (Seta)
+======================================== */
+.accessible-nav-link {
+    width: 16px;
+    height: 16px;
+    margin-left: var(--spacing-xs);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.6;
+    transition: all var(--transition-speed) var(--transition-ease);
+    position: relative;
+}
+
+.accessible-nav-link::before {
+    content: '▼';
+    font-size: 10px;
+    color: var(--color-text-primary);
+}
+
+.accessible-nav-link:hover {
+    opacity: 1;
+    transform: translateY(2px);
+}
+
+.nav-item:hover .accessible-nav-link::before {
+    color: var(--color-text-dark);
+}
+
+/* ========================================
+        SUBMENU (Dropdown)
+======================================== */
+.nav-submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--bg-primary);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-md);
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all var(--transition-speed) var(--transition-ease);
+}
+
+.nav-item:hover .nav-submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* ========================================
+BOTÃO DOAR
+Largura: 116px
+Altura: 44px
+Padding lateral: 12px
+Padding top: 2px
+======================================== */
+.nav-donate {
+    margin-left: var(--spacing-md);
+}
+
+.btn-donate {
+    width: var(--btn-donate-width);
+    height: var(--btn-donate-height);
+    padding-top: var(--btn-donate-padding-top);
+    padding-left: var(--btn-donate-padding-x);
+    padding-right: var(--btn-donate-padding-x);
+    background-color: var(--color-button);
+    color: var(--color-white);
+    font-size: var(--font-size-base);
+    font-weight: 500;
+    border-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition-speed) var(--transition-ease);
+}
+
+.btn-donate:hover {
+    background-color: var(--color-button);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 204, 0, 0.3);
+}
+
+.btn-donate:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(102, 204, 0, 0.3);
+}
+
+/* ========================================
+           RESPONSIVIDADE - TABLET
+======================================== */
+@media (max-width: 1024px) {
+    .nav-menu {
+        width: auto;
+        padding-right: var(--spacing-xl);
+    }
+
+    .nav-menu>ul {
+        gap: var(--spacing-lg);
+    }
+}
+
+/* ========================================
+           RESPONSIVIDADE - MOBILE
+======================================== */
+@media (max-width: 768px) {
+    .top-navigation {
+        flex-direction: column;
+        height: auto;
+        padding: var(--spacing-md) 0;
+    }
+
+    .site-logo {
+        width: 180px;
+        margin-bottom: var(--spacing-md);
+    }
+
+    .nav-menu {
+        width: 100%;
+        padding: 0 var(--spacing-md);
+    }
+
+    .nav-menu>ul {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+        width: 100%;
+    }
+
+    .nav-item {
+        width: 100%;
+        justify-content: center;
+        height: auto;
+    }
+
+    .nav-link {
+        width: 100%;
+        justify-content: center;
+        padding: var(--spacing-md);
+    }
+
+    .nav-donate {
+        margin-left: 0;
+        width: 100%;
+        margin-top: var(--spacing-md);
+    }
+
+    .btn-donate {
+        width: 100%;
+    }
+}
+
+
+/* ========================================
+           DEMO - CONTEÚDO ABAIXO DO HEADER
+======================================== */
+.content {
+    padding: var(--spacing-xl);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.demo-content h1 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-lg);
+}
+
+.demo-content p {
+    color: var(--color-text-light);
+    line-height: 1.6;
 }
