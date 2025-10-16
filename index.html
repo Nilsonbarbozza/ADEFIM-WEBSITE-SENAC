@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina inicial - ADEFIM</title>
+    <title>Página inicial - ADEFIM</title>
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
@@ -19,145 +21,189 @@
     <header class="top-navigation navbar" id="header">
         <!--CONTAINER 1: LOGO-->
         <a class="site-logo" href="#">
-            <img alt="AdefimLogo" src="\src\assets\img\logo-adefin.png"/>
+            <img alt="AdefimLogo" src="/src/assets/img/logo-adefin.png"/>
         </a>
-        <!-- CONTAINER 2: >NAVEGAÇÃO PRINCIPAL -->            
+        <!-- CONTAINER 2: NAVEGAÇÃO PRINCIPAL -->            
         <nav class="nav-menu" id="nav-menu">
             <ul>
-                <!-- ITEM 1: Informe-se
-                     Cor: #C1C1C1 | Font: Roboto 16px | Hover: Border 2px -->
-                <li class="nav-item menu-item menu-item-type-custom menu-item-object-custom menu-item-37848 menu-item-has-children">
-                    <a class="nav-link" href="">
-                        Informe-se
-                    </a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Informe-se</a>
                 </li>
-                <!-- ITEM 2: Como ajudar -->
-                <li
-                    class="nav-item menu-item menu-item-type-custom menu-item-object-custom menu-item-37848 menu-item-has-children">
-                    <a class="nav-link" data-ga-action="Como ajudar" data-ga-category="Menu Navigation"
-                        data-ga-label="Homepage" href="https://www.greenpeace.org/brasil/como-ajudar/" target="">
-                        Como ajudar
-                    </a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Como ajudar</a>
                 </li>
-                <!-- ITEM 3: Notícias e histórias -->
-                <li
-                    class="nav-item menu-item menu-item-type-custom menu-item-object-custom menu-item-37853 menu-item-has-children">
-                    <a class="nav-link" data-ga-action="Noticias e historias" data-ga-category="Menu Navigation"
-                        data-ga-label="Homepage" href="https://www.greenpeace.org/brasil/noticias-e-historias/"
-                        target="">
-                        Notícias e histórias
-                    </a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Notícias e histórias</a>
                 </li>
-                <!-- ITEM 4: Sobre nós -->
-                <li
-                    class="nav-item menu-item menu-item-type-custom menu-item-object-custom menu-item-37859 menu-item-has-children">
-                    <a class="nav-link" data-ga-action="Sobre nos" data-ga-category="Menu Navigation"
-                        data-ga-label="Homepage" href="https://www.greenpeace.org/brasil/quem-somos/" target="">
-                        Sobre nós
-                    </a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sobre nós</a>
                 </li>
-                <!-- BOTÃO DOAR
-                     Largura: 116px | Altura: 44px | Padding lateral: 12px | Padding top: 2px -->
                 <li class="nav-donate">
-                    <button class="btn btn-donate" data-ga-action="Donate" data-ga-category="Menu Navigation"
-                        data-ga-label="Homepage" role="link">
+                    <button class="btn btn-donate" role="link">
                         Doe agora
                     </button>
                 </li>
             </ul>
         </nav>
     </header>
-    <!-- END HEADER -->
+
     <main>
+        <!-- ========================================
+             CONTEÚDO DEMO (Remover em produção)
+        ======================================== -->
+        <section class="content">
+            <h1 style="color: red;">Base de desenvolvimento</h1>
+            <p>Este é um exemplo de base estática com navegação responsiva. Todos os elementos estão comentados e organizados para fácil manutenção.</p>
+            <p>O CSS está estruturado com variáveis no :root para fácil customização de cores, tamanhos e espaçamentos.</p>
+        </section>
 
-    <!-- ========================================
-         CONTEÚDO DEMO (Remover em produção)
-    ======================================== -->
-    <section class="content">
-        <h1 style="color: red;">Base de desenvolvimento</h1>
-        <p>Este é um exemplo de base estático com navegação responsiva. Todos os elementos estão comentados e organizados para fácil manutenção.</p>
-        <p>O CSS está estruturado com variáveis no :root para fácil customização de cores, tamanhos e espaçamentos.</p>
-    </section>
+        <!-- ==========================================
+           FEATURE 02: HERO SECTION - CAROUSEL
+           Responsável: [Nilson Barboza]
+           =========================================== -->
+        <section class="content">
+            <h1>FEATURE 02: HERO SECTION - CAROUSEL</h1>
+            <p>Carrossel de imagens hero com call-to-actions.</p>
+        </section>
 
-    <!-- ==========================================
-       FEATURE 02: HERO SECTION - CAROUSEL
-       Responsável: [Nilson Barboza]
-       Descrição: Carrossel de imagens hero com call-to-actions
-       =========================================== -->
-    <section id="" class="content">
-        <h1>FEATURE 02: HERO SECTION - CAROUSEL</h1>
-        <p>Carrossel de imagens hero com call-to-actions</p>
-        <p>O CSS está estruturado com variáveis no :root para fácil customização de cores, tamanhos e espaçamentos.</p>
-    </section>
+        <!-- ==========================================
+           FEATURE 03: SECTION - CAUSAS E CAMPANHAS
+           Responsável: [Dito]
+           Descrição: Grid de 8 cards informativos das causas
+           =========================================== -->
+        <section id="causas-campanhas" class="causas-campanhas content">
+            <h1>Nossas Causas e Campanhas</h1>
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>Missão</h3>
+                    <p>A ADEFIM trabalha para valorizar a pessoa com deficiência física e promover sua inclusão plena na sociedade, através da defesa de direitos, acessibilidade e fortalecimento da autonomia.</p>
+                </div>
 
-    <!-- ==========================================
-       FEATURE 03: SECTION - CAUSAS E CAMPANHAS
-       Responsável: [NOME DO DEV]
-       Descrição: Grid de 8 cards informativos das causas
-       =========================================== -->
-    <section id="" class="content">
-        <h1>FEATURE 03: SECTION - CAUSAS E CAMPANHAS</h1>
-        <p>Grid de 8 cards informativos das causas</p>
-        <p>O CSS está estruturado com variáveis no :root para fácil customização de cores, tamanhos e espaçamentos.</p>
-    </section>
+                <div class="card">
+                    <h3>Visão</h3>
+                    <p>Ser uma entidade de referência regional na promoção da cidadania, inclusão e respeito à diversidade, inspirando uma sociedade mais justa e acessível para todos.</p>
+                </div>
 
-    
-    <!-- ==========================================
-       FEATURE 04: SECTION - APOIE UMA CAUSA
-       Responsável: [NOME DO DEV]
-       Descrição: 3 cards de apoio com imagens e CTAs
-       =========================================== -->
-    <section id="" class="content">
-        <h1>FEATURE 04: SECTION - APOIE UMA CAUSA</h1>
-        <p>3 cards de apoio com imagens e CTAs</p>
-        <p>O CSS está estruturado com variáveis no :root para fácil customização de cores, tamanhos e espaçamentos.</p>
-    </section>
+                <div class="card">
+                    <h3>Campanha “Sede Própria”</h3>
+                    <p>Uma das grandes metas da ADEFIM é conquistar sua sede própria, para ampliar o atendimento aos associados e oferecer melhores condições para projetos e atividades comunitárias.</p>
+                </div>
 
-    <!-- ==========================================
-       FEATURE 05: SECTION - SOBRE O ADEFIM
-       Responsável: [NOME DO DEV]
-       Descrição: 2 blocos de texto + imagem (alternados)
-       =========================================== -->
-    <section id="" class="content">
-        <h1>FEATURE 05: SECTION - SOBRE O ADEFIM</h1>
-        <p>2 blocos de texto + imagem (alternados)</p>
-        <p>O CSS está estruturado com variáveis no :root para fácil customização de cores, tamanhos e espaçamentos.</p>
-    </section>
-    <!-- ==========================================
-       FEATURE 06: SECTION - Ajude a construir um futuro melhor
-       Responsável: [NOME DO DEV]
-       Descrição: Carrossel de informativos para ajudar a causa
-       =========================================== -->
-    <section id="" class="content">
-        <h1>FEATURE 06: SECTION - AJUDE A CONSTRUIR UM FUTURO MELHOR</h1>
-        <p>Carrossel de informativos para ajudar a causa</p>
-        <p>O CSS está estruturado com variáveis no :root para fácil customização de cores, tamanhos e espaçamentos.</p>
-    </section>
+                <div class="card">
+                    <h3>Projeto “Artes sem Limites”</h3>
+                    <p>Iniciativa cultural inclusiva da ADEFIM, desenvolvida em parceria com o Fórum de Mulheres com Deficiência, que incentiva a expressão artística e a autoestima das pessoas com deficiência física.<br>
+                    <a href="https://www.instagram.com/adefim2025/" target="_blank" class="link-social">Acompanhe no Instagram</a></p>
+                </div>
 
-    <!-- ==========================================
-    FEATURE 07: NOTICIAS - ULTIMAS NOTICIAS RELEVANTES
-    Responsável: [NOME DO DEV]
-    Descrição: Grid 4 cards com ultimas noticias relevantes
-    =========================================== -->
-    <section id="" class="content">
-        <h1>FEATURE 07: NOTICIAS - ULTIMAS NOTICIAS RELEVANTES</h1>
-        <p>Grid 4 cards com ultimas noticias relevantes</p>
-        <p>O CSS está estruturado com variáveis no :root para fácil customização de cores, tamanhos e espaçamentos.</p>
-    </section>
+                <div class="card">
+                    <h3>Inclusão no Trabalho</h3>
+                    <p>Promovemos parcerias com instituições públicas e privadas para oferecer capacitação profissional e inserção no mercado de trabalho, valorizando o potencial de cada associado.</p>
+                </div>
 
+                <div class="card">
+                    <h3>Assistência Multidisciplinar</h3>
+                    <p>A ADEFIM oferece apoio psicológico, social e jurídico aos associados, além de convênios em serviços de saúde, fisioterapia e ortopedia.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Mobilização e Acessibilidade</h3>
+                    <p>Atuamos junto ao poder público e à sociedade civil para garantir acessibilidade urbana, respeito às leis de inclusão e melhorias na mobilidade das pessoas com deficiência.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Parcerias e Doações</h3>
+                    <p>Por meio de parcerias com empresas e campanhas de arrecadação, mantemos nossos projetos ativos e ampliamos nosso impacto social. Cada doação ajuda a construir um futuro mais acessível.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+           FEATURE 04: SECTION - APOIE UMA CAUSA
+           Responsável: [NOME DO DEV]
+           =========================================== -->
+        <section class="content">
+            <h1>FEATURE 04: SECTION - APOIE UMA CAUSA</h1>
+            <p>3 cards de apoio com imagens e CTAs.</p>
+        </section>
+
+        <!-- ==========================================
+           FEATURE 05: SECTION - SOBRE O ADEFIM
+           Responsável: [NOME DO DEV]
+           =========================================== -->
+        <section class="content">
+            <h1>FEATURE 05: SECTION - SOBRE O ADEFIM</h1>
+            <p>2 blocos de texto + imagem (alternados).</p>
+        </section>
+
+        <!-- ==========================================
+           FEATURE 06: SECTION - AJUDE A CONSTRUIR UM FUTURO MELHOR
+           Responsável: [NOME DO DEV]
+           =========================================== -->
+        <section class="content">
+            <h1>FEATURE 06: SECTION - AJUDE A CONSTRUIR UM FUTURO MELHOR</h1>
+            <p>Carrossel de informativos para ajudar a causa.</p>
+        </section>
+
+        <!-- ==========================================
+           FEATURE 07: NOTÍCIAS - ÚLTIMAS NOTÍCIAS RELEVANTES
+           Responsável: [NOME DO DEV]
+           =========================================== -->
+        <section class="content">
+            <h1>FEATURE 07: NOTÍCIAS - ÚLTIMAS NOTÍCIAS RELEVANTES</h1>
+            <p>Grid de 4 cards com as últimas notícias relevantes.</p>
+        </section>
     </main>
 
     <!-- ==========================================
-       FEATURE 08: FOOTER - NAVEGAVEL - REDES SOCIAIS
-       Responsável: [NOME DO DEV]
+       FEATURE 08: FOOTER - NAVEGÁVEL - REDES SOCIAIS
+       Responsável: [Dito]
        Descrição: Informações de contato, links úteis e redes sociais
        =========================================== -->
-    <foster>
-        <section id="" class="content">
-            <h1>FEATURE 07: FOOTER - NAVEGAVEL - REDES SOCIAIS</h1>
-            <p>Informações de contato, links úteis e redes sociais</p>
-            <p>O CSS está estruturado com variáveis no :root para fácil customização de cores, tamanhos e espaçamentos.</p>
-        </section>
-    </foster>
+<footer id="contato" class="footer content">
+  <div class="footer-grid">
+    
+    <div class="footer-col">
+      <h3 class="footer-title">ADEFIM</h3>
+      <p>
+        Associação dos Deficientes Físicos de Mossoró – fundada em 23 de junho de 1993.
+        Entidade sem fins lucrativos dedicada à inclusão, acessibilidade e valorização da pessoa com deficiência.
+      </p>
+      <p><strong>CNPJ:</strong> 40.772.741/0001-05</p>
+    </div>
+
+    <div class="footer-col">
+      <h3 class="footer-title">Contato</h3>
+      <ul class="footer-list">
+        <li><strong>Endereço:</strong> Rua 06 de Janeiro, nº 3009<br>Bairro Santo Antônio – Mossoró/RN</li>
+        <li><strong>E-mail:</strong> <a href="mailto:adefimrn@gmail.com">adefimrn@gmail.com</a></li>
+        <li><strong>Telefone:</strong> (84) 9 9652-9631</li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3 class="footer-title">Redes Sociais</h3>
+      <ul class="footer-social">
+        <li><a href="https://www.instagram.com/adefim2025/" target="_blank">Instagram</a></li>
+        <li><a href="https://adefim.blogspot.com/" target="_blank">Blog oficial</a></li>
+        <li><a href="https://api.whatsapp.com/send?phone=558433148156" target="_blank">WhatsApp</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3 class="footer-title">Horário de Atendimento</h3>
+      <p>Segunda a Sexta-feira<br>das 8h às 12h e das 14h às 17h</p>
+      <a href="#doar" class="btn-donate">DOE AGORA</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>
+      © 2025 ADEFIM – Associação dos Deficientes Físicos de Mossoró. 
+      Todos os direitos reservados.
+    </p>
+  </div>
+</footer>
+
 </body>
 </html>
