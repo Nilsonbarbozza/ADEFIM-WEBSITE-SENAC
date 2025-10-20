@@ -396,14 +396,14 @@ Padding top: 2px
     margin-bottom: var(--spacing-xl);
 }
 
-.cards-grid {
+.FEATURE03s-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: var(--spacing-xl);
     padding: 0 var(--spacing-lg);
 }
 
-.card {
+.FEATURE03 {
     background-color: var(--color-white);
     border-radius: var(--border-radius);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
@@ -413,30 +413,30 @@ Padding top: 2px
     text-align: left;
 }
 
-.card:hover {
+.FEATURE03:hover {
     transform: translateY(-4px);
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
 }
 
-.card h3 {
+.FEATURE03 h3 {
     color: var(--color-primary);
     font-size: 1.25rem;
     margin-bottom: var(--spacing-sm);
 }
 
-.card p {
+.FEATURE03 p {
     color: var(--color-text-light);
     font-size: var(--font-size-base);
     line-height: 1.6;
 }
 
-.card a {
+.FEATURE03 a {
     color: var(--color-primary);
     font-weight: 500;
     transition: color var(--transition-speed) var(--transition-ease);
 }
 
-.card a:hover {
+.FEATURE03 a:hover {
     color: var(--color-primary-hover);
 }
 
@@ -446,12 +446,12 @@ Padding top: 2px
         font-size: 1.5rem;
     }
 
-    .cards-grid {
+    .FEATURE03s-grid {
         grid-template-columns: 1fr;
         gap: var(--spacing-lg);
     }
 
-    .card {
+    .FEATURE03 {
         text-align: center;
     }
 }
