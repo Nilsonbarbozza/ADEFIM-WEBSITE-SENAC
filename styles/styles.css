@@ -377,3 +377,51 @@ Padding top: 2px
     color: var(--color-text-light);
     line-height: 1.6;
 }
+
+
+
+/* Css para a a feature 05*/
+.whing {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    
+}
+.FEATURE05 {
+    background-color: #0091E0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: var(--spacing-xl);
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.FEATURE05 h1 {
+    color: aliceblue;
+    font-size: 1.25rem;
+    margin: var(--spacing-sm);
+}
+.FEATURE05 h2 {
+    color: aliceblue;
+    font-size: 1.25rem;
+    margin: var(--spacing-sm);
+}
+.FEATURE05 strong {
+    color: aliceblue;
+    font-size: 1.25rem;
+    margin: var(--spacing-sm);
+}
+.FEATURE05 p {
+    color: aliceblue;
+    font-size: 1.25rem;
+    margin: var(--spacing-sm);
+}
+.FEATURE05 ul {
+    color: aliceblue;
+    font-size: 1.25rem;
+    margin: var(--spacing-sm);
+}
+.FEATURE05 li {
+    color: aliceblue;
+    font-size: 1.25rem;
+    margin: var(--spacing-sm);
+}
