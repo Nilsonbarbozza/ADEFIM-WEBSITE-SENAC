@@ -466,7 +466,7 @@ Padding top: 2px
     padding-bottom: var(--spacing-xl);
     border-top: 4px solid var(--color-primary-hover);
     padding-left: 70px;
-    padding-right: 200px;
+    padding-right: 70px;
 }
 
 .footer-grid {
