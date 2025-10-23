@@ -540,7 +540,7 @@ Padding top: 2px
 ======================================== */
 
 /* ========================================
-    FEATURE 04: SECTION - APOIE UMA CAUSA
+    FEATURE 07: SECTION - Ajude a construir um futuro melhor 
        Responsável: [Dylhermando]
 ======================================== */
 /* Container de Colunas (Equivalente a .wp-block-columns .is-layout-flex) */
@@ -650,7 +650,7 @@ Padding top: 2px
     padding: 0;
     color: #666666;
     font-size: 0.95rem;
-    margin-top: auto; 
+    margin-top: initial; 
 }
 
 .resumo-texto {
@@ -832,6 +832,12 @@ Padding top: 2px
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     line-height: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block ;
+    width: 370px;
+    height: 200px;
 }
 
 .cartao-imagem .imagem-completa {
