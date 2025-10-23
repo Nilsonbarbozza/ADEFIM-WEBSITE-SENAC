@@ -1,0 +1,70 @@
+/* ========================================
+    FEATURE 04: SECTION - APOIE UMA CAUSA
+       Responsável: [Marcos Diego]
+======================================== */
+
+#s04 {
+    display: flex;
+    height: 701px;
+    position: relative;
+    background-color: #C1C1C1;
+}
+
+/* ========================================
+    Textos de s04
+======================================== */
+#texto04 h1 {
+    margin-top: 150px;
+    width: 401px;
+}
+
+#texto04 h4 {
+    margin-top: 40px;
+    width: 373px;
+}
+
+/* ========================================
+    IMG de s04
+======================================== */
+#s04 img {
+    height: 701px;
+    width: 701px;
+
+    position: absolute;
+    right: 0;
+
+    -webkit-mask-mode: luminance;
+    mask-mode: luminance;
+
+    -webkit-mask-image: linear-gradient(to left, white 50%, black 100%);
+    mask-image: linear-gradient(to left, white 50%, black 100%);
+
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: left top;
+    mask-position: left top;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
+
+/* ========================================
+    Textos de s04
+======================================== */
+#s04 .btn {
+    width: 116px;
+    height: 44px;
+    background-color: var(--color-button);
+    color: var(--color-white);
+    font-size: var(--font-size-base);
+    font-weight: 500;
+    border-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition-speed) var(--transition-ease);
+}
+
+.btn-donate:hover {
+    background-color: var(--color-button);
+    transform: translateY(-2px);
+}
