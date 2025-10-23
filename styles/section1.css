@@ -1,96 +1,5 @@
 /* ========================================
-VARIÁVEIS CSS - ROOT
-======================================== */
-:root {
-    /* === CORES PRIMÁRIAS === */
-    --color-primary: #0091E0;
-    --color-primary-hover: #0091E0;
-    --color-white: #FFFFFF;
-    --color-black: #000000;
-    --color-button: #0091E0;
-
-    /* === CORES DE TEXTO === */
-    --color-text-primary: #C1C1C1;
-    --color-text-dark: #333333;
-    --color-text-light: #666666;
-
-    /* === CORES DE FUNDO === */
-    --bg-primary: #FFFFFF;
-    --bg-transparent: transparent;
-
-    /* === TIPOGRAFIA === */
-    --font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    --font-size-nav: 16px;
-    --font-size-base: 16px;
-    --font-size-sm: 14px;
-
-    /* === DIMENSÕES DO HEADER === */
-    --header-height: 68px;
-    --logo-width: 169px;
-    --logo-padding: 12px;
-    --nav-width: 700px;
-    --nav-padding-right: 129px;
-
-    /* === BOTÃO DOAR === */
-    --btn-donate-width: 116px;
-    --btn-donate-height: 44px;
-    --btn-donate-padding-x: 12px;
-    --btn-donate-padding-top: 2px;
-
-    /* === ANIMAÇÕES === */
-    --transition-speed: 0.3s;
-    --transition-ease: ease-in-out;
-
-    /* === BORDAS === */
-    --border-hover-height: 2px;
-    --border-radius: 4px;
-
-    /* === ESPAÇAMENTOS === */
-    --spacing-xs: 4px;
-    --spacing-sm: 8px;
-    --spacing-md: 12px;
-    --spacing-lg: 16px;
-    --spacing-xl: 24px;
-
-}
-
-/* ========================================
-           RESET BÁSICO
-======================================== */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: var(--font-family);
-    font-size: var(--font-size-base);
-    color: var(--color-text-dark);
-    line-height: 1.5;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-ul, ol {
-    list-style: none;
-}
-
-button {
-    border: none;
-    background: none;
-    cursor: pointer;
-    font-family: inherit;
-}
-
-/* ========================================
            HEADER PRINCIPAL
-           Largura: 100%
-           Altura: 68px
-           Background: #FFFFFF
 ======================================== */
 .top-navigation {
     width: 100%;
@@ -107,9 +16,6 @@ button {
 
 /* ========================================
            LOGO CONTAINER
-           Largura: 220px
-           Altura: 68px
-           Padding: 12px
 ======================================== */
 .site-logo {
     width: var(--logo-width);
@@ -134,9 +40,6 @@ button {
 
 /* ========================================
            NAVEGAÇÃO PRINCIPAL
-           Largura: 700px
-           Altura: 68px
-           Padding-right: 129px
 ======================================== */
 .nav-menu {
     width: var(--nav-width);
@@ -164,9 +67,6 @@ button {
 
 /* ========================================
            LINKS DE NAVEGAÇÃO
-           Cor: #C1C1C1
-           Font: Roboto 16px
-           Hover: Border-bottom 2px
 ======================================== */
 .nav-link {
     color: var(--color-black);
@@ -358,9 +258,8 @@ Padding top: 2px
     }
 }
 
-
 /* ========================================
-           DEMO - CONTEÚDO ABAIXO DO HEADER
+    DEMO - CONTEÚDO ABAIXO DO HEADER
 ======================================== */
 .content {
     padding: var(--spacing-xl);
@@ -376,6 +275,8 @@ Padding top: 2px
 .demo-content p {
     color: var(--color-text-light);
     line-height: 1.6;
+<<<<<<< HEAD:styles/section1.css
+=======
 }
 
 /* ========================================
@@ -384,7 +285,7 @@ Padding top: 2px
 ======================================== */
 
 /* ========================================
-    FEATURE 07: NOTICIAS - ULTIMAS NOTICIAS RELEVANTES 
+    FEATURE 04: SECTION - APOIE UMA CAUSA
        Responsável: [Dylhermando]
 ======================================== */
 /* Container de Colunas (Equivalente a .wp-block-columns .is-layout-flex) */
@@ -494,443 +395,294 @@ Padding top: 2px
     padding: 0;
     color: #666666;
     font-size: 0.95rem;
-    margin-top: initial; 
-}
-
-.resumo-texto {
-    margin-bottom: 0.5rem;
-}
-
-/* Link "Saiba mais" */
-.resumo-link-saiba-mais {
-    color: #0091E0; 
-    font-weight: 500;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 0.5rem;
-    transition: text-decoration 0.2s;
-}
-
-.resumo-link-saiba-mais:hover {
-    text-decoration: underline;
-}
-
-
-/* ========================================
-    RESPONSIVIDADE DA GRADE
-======================================== */
-
-
-@media (max-width: 1024px) {
-    .lista-posts.grade-4-colunas {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-
-@media (max-width: 600px) {
-    .lista-posts.grade-4-colunas {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* ========================================
-    FEATURE 04: SECTION - APOIE UMA CAUSA
-       Responsável: [Marcos Diego]
-======================================== */
-
-/* ========================================
-    FEATURE 07: SECTION - Ajude a construir um futuro melhor 
-       Responsável: [Dylhermando]
-======================================== */
-/* Container de Colunas (Equivalente a .wp-block-columns .is-layout-flex) */
-.bloco-colunas {
-    display: flex;
-    justify-content: space-between; 
-    align-items: stretch; 
-    width: 100%;
-}
-
-.coluna {
-    flex-grow: 1;
-    padding: 0 10px;
-}
-
-.alinhamento-vertical-inferior {
-    display: flex; 
-    flex-direction: column; 
-    justify-content: flex-end; 
-}
-
-.titulo-esquerda {
-    text-align: left;
-    margin: 0; 
-}
-
-.titulo-direita {
-    text-align: right;
-    margin: 0; 
-}
-
-.fonte-roboto {
-    font-family: 'Roboto', sans-serif;
-}
-
-
-.tamanho-medio {
-    font-size: 1.1em; 
-}
-
-.titulo-direita a {
-    text-decoration: none; 
-    color: inherit; 
-}
-
-/* Container da Grade (Lista de Posts) */
-.lista-posts.grade-4-colunas {
-    
-    display: grid;
-    gap: 1.5rem; 
-    
-    grid-template-columns: repeat(4, 1fr);
-    
-    /* Limpeza básica de lista */
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-/* Estilo do Item Individual (Card) */
-.item-post {
-    background-color: #ffffff;
-    border-radius: 8px;
-    overflow: hidden; 
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    display: flex;
-    flex-direction: column; 
-    text-decoration: none;
-    color: inherit;
-}
-
-/* Imagem Destacada (Figure) */
-.post-imagem-destacada {
-    margin: 0; 
-    margin-bottom: 1rem;
-    line-height: 0; 
-}
-
-.post-imagem-destacada .imagem-post {
-    width: 100%;
-    height: 200px; 
-    object-fit: cover;
-}
-
-/* Título do Post (h2) */
-.post-titulo {
-    font-size: 1.3rem;
-    font-weight: bold;
-    padding: 0; 
-    margin-bottom: 0.5rem;
-    line-height: 1.2;
-}
-
-.post-titulo a {
-    color: #333333;
-    text-decoration: none;
-    transition: color 0.2s ease-in-out;
-}
-
-.post-titulo a:hover {
-    color: #0091E0; 
-}
-
-/* Resumo (Excerpt) e Link */
-.post-resumo {
-    
-    padding: 0;
-    color: #666666;
-    font-size: 0.95rem;
-    margin-top: initial; 
-}
-
-.resumo-texto {
-    margin-bottom: 0.5rem;
-}
-
-/* Link "Saiba mais" */
-.resumo-link-saiba-mais {
-    color: #0091E0; 
-    font-weight: 500;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 0.5rem;
-    transition: text-decoration 0.2s;
-}
-
-.resumo-link-saiba-mais:hover {
-    text-decoration: underline;
-}
-
-
-/* ========================================
-    RESPONSIVIDADE DA GRADE
-======================================== */
-
-
-@media (max-width: 1024px) {
-    .lista-posts.grade-4-colunas {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-
-@media (max-width: 600px) {
-    .lista-posts.grade-4-colunas {
-        grid-template-columns: 1fr;
-    }
-}
-
-
-
-/* Css para a a feature 05*/
-.whing {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    text-align: center;
-    
-}
-.FEATURE05 {
-    background-color: #0091E0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: var(--spacing-xl);
-    max-width: 1200px;
-    margin: 0 auto;
-    border-radius: 10px;
-}
-.FEATURE05 h1 {
-    color: aliceblue;
-    font-size: 1.25rem;
-    margin: var(--spacing-sm);
-}
-.FEATURE05 h2 {
-    color: aliceblue;
-    font-size: 1.25rem;
-    margin: var(--spacing-sm);
-}
-.FEATURE05 strong {
-    color: aliceblue;
-    font-size: 1.25rem;
-    margin: var(--spacing-sm);
-}
-.FEATURE05 p {
-    color: aliceblue;
-    font-size: 1.25rem;
-    margin: var(--spacing-sm);
-}
-.FEATURE05 ul {
-    color: aliceblue;
-    font-size: 1.25rem;
-    margin: var(--spacing-sm);
-}
-.FEATURE05 li {
-    color: aliceblue;
-    font-size: 1.25rem;
-    margin: var(--spacing-sm);
-}
-
-
-/* Css para a a feature 05*/
-.whing {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    text-align: center;
-    
-}
-.FEATURE05 {
-    background-color: #0091E0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: var(--spacing-xl);
-    max-width: 1200px;
-    margin: 0 auto;
-    border-radius: 10px;
-}
-.FEATURE05 h1 {
-    color: aliceblue;
-    font-size: 1.25rem;
-    margin: var(--spacing-sm);
-}
-.FEATURE05 h2 {
-    color: aliceblue;
-    font-size: 1.25rem;
-    margin: var(--spacing-sm);
-}
-.FEATURE05 strong {
-    color: aliceblue;
-    font-size: 1.25rem;
-    margin: var(--spacing-sm);
-}
-.FEATURE05 p {
-    color: aliceblue;
-    font-size: 1.25rem;
-    margin: var(--spacing-sm);
-}
-.FEATURE05 ul {
-    color: aliceblue;
-    font-size: 1.25rem;
-    margin: var(--spacing-sm);
-}
-.FEATURE05 li {
-    color: aliceblue;
-    font-size: 1.25rem;
-    margin: var(--spacing-sm);
-}
-/* ==========================================
-       FEATURE 06: SECTION - Ajude a construir um futuro melhor
-       Responsável: [Dylhermando]
-       Descrição: Carrossel de informativos para ajudar a causa
-       =========================================== */
-
-/* Estilo para o título da seção */
-.secao-titulo {
-    text-align: center; 
-    margin-bottom: 2rem;
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-/* Container de Colunas (Equivalente a .wp-block-columns .is-layout-flex) */
-.bloco-colunas-cta {
-    display: flex;
-    gap: 20px; 
-    flex-wrap: wrap; 
-    margin: 0 auto;
-    max-width: 1200px; 
-}
-
-/* Estilo do Cartão/Coluna (Equivalente a .wp-block-column .gpbr-has-shadow-background) */
-.coluna-cta {
-    flex-grow: 1;
-    flex-basis: 0; 
-    min-width: 300px; 
-    
-    /* Estilo do Cartão */
-    background-color: #ffffff;
-    padding: 1.5rem;
-    border-radius: 8px;
-    
-    /* Sombra (Equivalente a gpbr-has-shadow-background) */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    
-    display: flex;
-    flex-direction: column;
-}
-
-/* Imagem e Título do Cartão */
-.cartao-imagem {
-    margin: 0 -1.5rem 1rem -1.5rem; 
-    overflow: hidden;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    line-height: 0;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: inline-block ;
-    width: 370px;
-    height: 200px;
-}
-
-.cartao-imagem .imagem-completa {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-}
-
-.cartao-titulo {
-    font-size: 1.5rem;
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-}
-
-.cartao-titulo a {
-    color: #333333;
-    text-decoration: none;
-}
-
-.cartao-titulo a:hover {
-    text-decoration: underline;
-}
-
-/* Descrição do Cartão */
-.cartao-descricao {
-    font-size: 1rem;
-    color: #666666;
-    line-height: 1.5;
-    margin-bottom: 1.5rem;
-    
     margin-top: auto; 
 }
 
-/* Bloco de Botões (Equivalente a .wp-block-buttons) */
-.bloco-botoes {
-    display: flex;
-    width: 100%;
-    margin-top: 1rem;
+.resumo-texto {
+    margin-bottom: 0.5rem;
 }
 
-.bloco-botoes.justificar-centro {
-    justify-content: center;
-}
-
-.bloco-botao-item {
-    width: 100%; 
-}
-
-.bloco-botao-item.largura-50 {
-    max-width: 50%; 
-}
-
-.bloco-botao-item.estilo-cta .botao-link {
-    display: block;
-    text-align: center;
-    padding: 0.75rem 1.5rem;
+/* Link "Saiba mais" */
+.resumo-link-saiba-mais {
+    color: #0091E0; 
+    font-weight: 500;
     text-decoration: none;
-    background-color: #0091E0; 
-    color: #FFFFFF;
-    border-radius: 4px;
-    font-size: 0.9rem; 
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-top: 0.5rem;
+    transition: text-decoration 0.2s;
 }
 
-.bloco-botao-item.estilo-cta .botao-link:hover {
-    background-color: #0077c2; 
+.resumo-link-saiba-mais:hover {
+    text-decoration: underline;
+}
+
+
+/* ========================================
+    RESPONSIVIDADE DA GRADE
+======================================== */
+
+
+@media (max-width: 1024px) {
+    .lista-posts.grade-4-colunas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+    .lista-posts.grade-4-colunas {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* ========================================
-    RESPONSIVIDADE (Quebra de Layout)
+    FEATURE 04: SECTION - APOIE UMA CAUSA
+       Responsável: [Marcos Diego]
 ======================================== */
 
-@media (max-width: 900px) {
-    /* Em telas médias, empilha para 2 colunas */
-    .bloco-colunas-cta {
-        gap: 15px;
-    }
-    .coluna-cta {
-        flex-basis: calc(50% - 15px); 
-        min-width: 0;
+/* ========================================
+    FEATURE 04: SECTION - APOIE UMA CAUSA
+       Responsável: [Dylhermando]
+======================================== */
+/* Container de Colunas (Equivalente a .wp-block-columns .is-layout-flex) */
+.bloco-colunas {
+    display: flex;
+    justify-content: space-between; 
+    align-items: stretch; 
+    width: 100%;
+}
+
+.coluna {
+    flex-grow: 1;
+    padding: 0 10px;
+}
+
+.alinhamento-vertical-inferior {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-end; 
+}
+
+.titulo-esquerda {
+    text-align: left;
+    margin: 0; 
+}
+
+.titulo-direita {
+    text-align: right;
+    margin: 0; 
+}
+
+.fonte-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.tamanho-medio {
+    font-size: 1.1em; 
+}
+
+.titulo-direita a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+/* Container da Grade (Lista de Posts) */
+.lista-posts.grade-4-colunas {
+    
+    display: grid;
+    gap: 1.5rem; 
+    
+    grid-template-columns: repeat(4, 1fr);
+    
+    /* Limpeza básica de lista */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo do Item Individual (Card) */
+.item-post {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column; 
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Imagem Destacada (Figure) */
+.post-imagem-destacada {
+    margin: 0; 
+    margin-bottom: 1rem;
+    line-height: 0; 
+}
+
+.post-imagem-destacada .imagem-post {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+}
+
+/* Título do Post (h2) */
+.post-titulo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 0; 
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+.post-titulo a {
+    color: #333333;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.post-titulo a:hover {
+    color: #0091E0; 
+}
+
+/* Resumo (Excerpt) e Link */
+.post-resumo {
+    
+    padding: 0;
+    color: #666666;
+    font-size: 0.95rem;
+    margin-top: auto; 
+}
+
+.resumo-texto {
+    margin-bottom: 0.5rem;
+}
+
+/* Link "Saiba mais" */
+.resumo-link-saiba-mais {
+    color: #0091E0; 
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 0.5rem;
+    transition: text-decoration 0.2s;
+}
+
+.resumo-link-saiba-mais:hover {
+    text-decoration: underline;
+}
+
+
+/* ========================================
+    RESPONSIVIDADE DA GRADE
+======================================== */
+
+
+@media (max-width: 1024px) {
+    .lista-posts.grade-4-colunas {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
+
 @media (max-width: 600px) {
-    .coluna-cta {
-        width: 100%;
-        flex-basis: 100%;
-        margin-bottom: 15px;
+    .lista-posts.grade-4-colunas {
+        grid-template-columns: 1fr;
     }
+}
+
+
+
+/* Css para a a feature 05*/
+.whing {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
     
-    .bloco-botao-item.largura-50 {
-        max-width: 80%;
-    }
+}
+.FEATURE05 {
+    background-color: #0091E0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: var(--spacing-xl);
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.FEATURE05 h1 {
+    color: aliceblue;
+    font-size: 1.25rem;
+    margin: var(--spacing-sm);
+}
+.FEATURE05 h2 {
+    color: aliceblue;
+    font-size: 1.25rem;
+    margin: var(--spacing-sm);
+}
+.FEATURE05 strong {
+    color: aliceblue;
+    font-size: 1.25rem;
+    margin: var(--spacing-sm);
+}
+.FEATURE05 p {
+    color: aliceblue;
+    font-size: 1.25rem;
+    margin: var(--spacing-sm);
+}
+.FEATURE05 ul {
+    color: aliceblue;
+    font-size: 1.25rem;
+    margin: var(--spacing-sm);
+}
+.FEATURE05 li {
+    color: aliceblue;
+    font-size: 1.25rem;
+    margin: var(--spacing-sm);
+}
+
+
+/* Css para a a feature 05*/
+.whing {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    
+}
+.FEATURE05 {
+    background-color: #0091E0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: var(--spacing-xl);
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.FEATURE05 h1 {
+    color: aliceblue;
+    font-size: 1.25rem;
+    margin: var(--spacing-sm);
+}
+.FEATURE05 h2 {
+    color: aliceblue;
+    font-size: 1.25rem;
+    margin: var(--spacing-sm);
+}
+.FEATURE05 strong {
+    color: aliceblue;
+    font-size: 1.25rem;
+    margin: var(--spacing-sm);
+}
+.FEATURE05 p {
+    color: aliceblue;
+    font-size: 1.25rem;
+    margin: var(--spacing-sm);
+}
+.FEATURE05 ul {
+    color: aliceblue;
+    font-size: 1.25rem;
+    margin: var(--spacing-sm);
+}
+.FEATURE05 li {
+    color: aliceblue;
+    font-size: 1.25rem;
+    margin: var(--spacing-sm);
+>>>>>>> main:styles/styles.css
 }
