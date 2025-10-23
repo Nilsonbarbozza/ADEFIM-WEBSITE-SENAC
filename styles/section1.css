@@ -275,4 +275,414 @@ Padding top: 2px
 .demo-content p {
     color: var(--color-text-light);
     line-height: 1.6;
+<<<<<<< HEAD:styles/section1.css
+=======
+}
+
+/* ========================================
+    FEATURE 04: SECTION - APOIE UMA CAUSA
+       Responsável: [Marcos Diego]
+======================================== */
+
+/* ========================================
+    FEATURE 04: SECTION - APOIE UMA CAUSA
+       Responsável: [Dylhermando]
+======================================== */
+/* Container de Colunas (Equivalente a .wp-block-columns .is-layout-flex) */
+.bloco-colunas {
+    display: flex;
+    justify-content: space-between; 
+    align-items: stretch; 
+    width: 100%;
+}
+
+.coluna {
+    flex-grow: 1;
+    padding: 0 10px;
+}
+
+.alinhamento-vertical-inferior {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-end; 
+}
+
+.titulo-esquerda {
+    text-align: left;
+    margin: 0; 
+}
+
+.titulo-direita {
+    text-align: right;
+    margin: 0; 
+}
+
+.fonte-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.tamanho-medio {
+    font-size: 1.1em; 
+}
+
+.titulo-direita a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+/* Container da Grade (Lista de Posts) */
+.lista-posts.grade-4-colunas {
+    
+    display: grid;
+    gap: 1.5rem; 
+    
+    grid-template-columns: repeat(4, 1fr);
+    
+    /* Limpeza básica de lista */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo do Item Individual (Card) */
+.item-post {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column; 
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Imagem Destacada (Figure) */
+.post-imagem-destacada {
+    margin: 0; 
+    margin-bottom: 1rem;
+    line-height: 0; 
+}
+
+.post-imagem-destacada .imagem-post {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+}
+
+/* Título do Post (h2) */
+.post-titulo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 0; 
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+.post-titulo a {
+    color: #333333;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.post-titulo a:hover {
+    color: #0091E0; 
+}
+
+/* Resumo (Excerpt) e Link */
+.post-resumo {
+    
+    padding: 0;
+    color: #666666;
+    font-size: 0.95rem;
+    margin-top: auto; 
+}
+
+.resumo-texto {
+    margin-bottom: 0.5rem;
+}
+
+/* Link "Saiba mais" */
+.resumo-link-saiba-mais {
+    color: #0091E0; 
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 0.5rem;
+    transition: text-decoration 0.2s;
+}
+
+.resumo-link-saiba-mais:hover {
+    text-decoration: underline;
+}
+
+
+/* ========================================
+    RESPONSIVIDADE DA GRADE
+======================================== */
+
+
+@media (max-width: 1024px) {
+    .lista-posts.grade-4-colunas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+    .lista-posts.grade-4-colunas {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ========================================
+    FEATURE 04: SECTION - APOIE UMA CAUSA
+       Responsável: [Marcos Diego]
+======================================== */
+
+/* ========================================
+    FEATURE 04: SECTION - APOIE UMA CAUSA
+       Responsável: [Dylhermando]
+======================================== */
+/* Container de Colunas (Equivalente a .wp-block-columns .is-layout-flex) */
+.bloco-colunas {
+    display: flex;
+    justify-content: space-between; 
+    align-items: stretch; 
+    width: 100%;
+}
+
+.coluna {
+    flex-grow: 1;
+    padding: 0 10px;
+}
+
+.alinhamento-vertical-inferior {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-end; 
+}
+
+.titulo-esquerda {
+    text-align: left;
+    margin: 0; 
+}
+
+.titulo-direita {
+    text-align: right;
+    margin: 0; 
+}
+
+.fonte-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.tamanho-medio {
+    font-size: 1.1em; 
+}
+
+.titulo-direita a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+/* Container da Grade (Lista de Posts) */
+.lista-posts.grade-4-colunas {
+    
+    display: grid;
+    gap: 1.5rem; 
+    
+    grid-template-columns: repeat(4, 1fr);
+    
+    /* Limpeza básica de lista */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo do Item Individual (Card) */
+.item-post {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column; 
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Imagem Destacada (Figure) */
+.post-imagem-destacada {
+    margin: 0; 
+    margin-bottom: 1rem;
+    line-height: 0; 
+}
+
+.post-imagem-destacada .imagem-post {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+}
+
+/* Título do Post (h2) */
+.post-titulo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 0; 
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+.post-titulo a {
+    color: #333333;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.post-titulo a:hover {
+    color: #0091E0; 
+}
+
+/* Resumo (Excerpt) e Link */
+.post-resumo {
+    
+    padding: 0;
+    color: #666666;
+    font-size: 0.95rem;
+    margin-top: auto; 
+}
+
+.resumo-texto {
+    margin-bottom: 0.5rem;
+}
+
+/* Link "Saiba mais" */
+.resumo-link-saiba-mais {
+    color: #0091E0; 
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 0.5rem;
+    transition: text-decoration 0.2s;
+}
+
+.resumo-link-saiba-mais:hover {
+    text-decoration: underline;
+}
+
+
+/* ========================================
+    RESPONSIVIDADE DA GRADE
+======================================== */
+
+
+@media (max-width: 1024px) {
+    .lista-posts.grade-4-colunas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+    .lista-posts.grade-4-colunas {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* Css para a a feature 05*/
+.whing {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    
+}
+.FEATURE05 {
+    background-color: #0091E0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: var(--spacing-xl);
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.FEATURE05 h1 {
+    color: aliceblue;
+    font-size: 1.25rem;
+    margin: var(--spacing-sm);
+}
+.FEATURE05 h2 {
+    color: aliceblue;
+    font-size: 1.25rem;
+    margin: var(--spacing-sm);
+}
+.FEATURE05 strong {
+    color: aliceblue;
+    font-size: 1.25rem;
+    margin: var(--spacing-sm);
+}
+.FEATURE05 p {
+    color: aliceblue;
+    font-size: 1.25rem;
+    margin: var(--spacing-sm);
+}
+.FEATURE05 ul {
+    color: aliceblue;
+    font-size: 1.25rem;
+    margin: var(--spacing-sm);
+}
+.FEATURE05 li {
+    color: aliceblue;
+    font-size: 1.25rem;
+    margin: var(--spacing-sm);
+}
+
+
+/* Css para a a feature 05*/
+.whing {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    
+}
+.FEATURE05 {
+    background-color: #0091E0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: var(--spacing-xl);
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.FEATURE05 h1 {
+    color: aliceblue;
+    font-size: 1.25rem;
+    margin: var(--spacing-sm);
+}
+.FEATURE05 h2 {
+    color: aliceblue;
+    font-size: 1.25rem;
+    margin: var(--spacing-sm);
+}
+.FEATURE05 strong {
+    color: aliceblue;
+    font-size: 1.25rem;
+    margin: var(--spacing-sm);
+}
+.FEATURE05 p {
+    color: aliceblue;
+    font-size: 1.25rem;
+    margin: var(--spacing-sm);
+}
+.FEATURE05 ul {
+    color: aliceblue;
+    font-size: 1.25rem;
+    margin: var(--spacing-sm);
+}
+.FEATURE05 li {
+    color: aliceblue;
+    font-size: 1.25rem;
+    margin: var(--spacing-sm);
+>>>>>>> main:styles/styles.css
 }
