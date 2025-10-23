@@ -1,0 +1,32 @@
+/* ========================================
+    FEATURE 04: SECTION - APOIE UMA CAUSA
+       Responsável: [Marcos Diego]
+======================================== */
+
+#s04 {
+    display: flex;
+    height: 701px;
+    position: relative;
+}
+
+
+#img04 {
+    height: 701px;
+    width: 701px;
+
+    position: absolute;
+    right: 0;
+
+    -webkit-mask-mode: luminance;
+    mask-mode: luminance;
+
+    -webkit-mask-image: linear-gradient(to left, white 50%, black 100%);
+    mask-image: linear-gradient(to left, white 50%, black 100%);
+
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: left top;
+    mask-position: left top;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
