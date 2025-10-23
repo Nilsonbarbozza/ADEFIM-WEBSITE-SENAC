@@ -1,0 +1,15 @@
+/* Google Fonts Imports */
+@import url("https://fonts.googleapis.com");
+@import url("https://fonts.gstatic.com");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+/* CSS Variables sections */
+@import url("base.css");
+@import url("section1.css");
+@import url("section2.css");
+@import url("section3.css");
+@import url("section4.css");
+@import url("section5.css");
+@import url("section6.css");
+@import url("section7.css");
+@import url("section8.css");

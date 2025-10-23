@@ -1,97 +1,5 @@
 /* ========================================
-VARIÁVEIS CSS - ROOT
-======================================== */
-:root {
-    /* === CORES PRIMÁRIAS === */
-    --color-primary: #0091E0;
-    --color-primary-hover: #01507b;
-    --color-white: #FFFFFF;
-    --color-black: #000000;
-    --color-button: #0091E0;
-
-    /* === CORES DE TEXTO === */
-    --color-text-primary: #C1C1C1;
-    --color-text-dark: #333333;
-    --color-text-light: #666666;
-
-    /* === CORES DE FUNDO === */
-    --bg-primary: #FFFFFF;
-    --bg-secondary: #C1C1C1;
-    --bg-transparent: transparent;
-
-    /* === TIPOGRAFIA === */
-    --font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    --font-size-nav: 16px;
-    --font-size-base: 16px;
-    --font-size-sm: 14px;
-
-    /* === DIMENSÕES DO HEADER === */
-    --header-height: 68px;
-    --logo-width: 169px;
-    --logo-padding: 12px;
-    --nav-width: 700px;
-    --nav-padding-right: 129px;
-
-    /* === BOTÃO DOAR === */
-    --btn-donate-width: 116px;
-    --btn-donate-height: 44px;
-    --btn-donate-padding-x: 12px;
-    --btn-donate-padding-top: 2px;
-
-    /* === ANIMAÇÕES === */
-    --transition-speed: 0.3s;
-    --transition-ease: ease-in-out;
-
-    /* === BORDAS === */
-    --border-hover-height: 2px;
-    --border-radius: 4px;
-
-    /* === ESPAÇAMENTOS === */
-    --spacing-xs: 4px;
-    --spacing-sm: 8px;
-    --spacing-md: 12px;
-    --spacing-lg: 16px;
-    --spacing-xl: 24px;
-
-}
-
-/* ========================================
-           RESET BÁSICO
-======================================== */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: var(--font-family);
-    font-size: var(--font-size-base);
-    color: var(--color-text-dark);
-    line-height: 1.5;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-ul, ol {
-    list-style: none;
-}
-
-button {
-    border: none;
-    background: none;
-    cursor: pointer;
-    font-family: inherit;
-}
-
-/* ========================================
            HEADER PRINCIPAL
-           Largura: 100%
-           Altura: 68px
-           Background: #FFFFFF
 ======================================== */
 .top-navigation {
     width: 100%;
@@ -108,9 +16,6 @@ button {
 
 /* ========================================
            LOGO CONTAINER
-           Largura: 220px
-           Altura: 68px
-           Padding: 12px
 ======================================== */
 .site-logo {
     width: var(--logo-width);
@@ -135,9 +40,6 @@ button {
 
 /* ========================================
            NAVEGAÇÃO PRINCIPAL
-           Largura: 700px
-           Altura: 68px
-           Padding-right: 129px
 ======================================== */
 .nav-menu {
     width: var(--nav-width);
@@ -165,9 +67,6 @@ button {
 
 /* ========================================
            LINKS DE NAVEGAÇÃO
-           Cor: #C1C1C1
-           Font: Roboto 16px
-           Hover: Border-bottom 2px
 ======================================== */
 .nav-link {
     color: var(--color-black);
@@ -359,7 +258,6 @@ Padding top: 2px
     }
 }
 
-
 /* ========================================
     DEMO - CONTEÚDO ABAIXO DO HEADER
 ======================================== */
@@ -378,5 +276,3 @@ Padding top: 2px
     color: var(--color-text-light);
     line-height: 1.6;
 }
-
-/* CONTINUACÃO - DESENVOLVIMENTO */
