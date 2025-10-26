@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +16,7 @@
     <header class="top-navigation navbar" id="header">
         <!--CONTAINER 1: LOGO-->
         <a class="site-logo" href="#">
-            <img alt="AdefimLogo" src="\src\assets\img\logo-adefin.png" />
+            <img alt="AdefimLogo" src="\src\assets\img\logo.png" />
         </a>
         <!-- CONTAINER 2: >NAVEGAÇÃO PRINCIPAL -->
         <nav class="nav-menu" id="nav-menu">
@@ -68,30 +67,66 @@
     </header>
     <!-- END HEADER -->
     <main>
-
-        <!-- ========================================
-         CONTEÚDO DEMO (Remover em produção)
-    ======================================== -->
-        <section class="content">
-            <h1 style="color: red;">Base de desenvolvimento</h1>
-            <p>Este é um exemplo de base estático com navegação responsiva. Todos os elementos estão comentados e
-                organizados para fácil manutenção.</p>
-            <p>O CSS está estruturado com variáveis no :root para fácil customização de cores, tamanhos e espaçamentos.
-            </p>
+        <!--==========================================
+           FEATURE 02: HERO SECTION - CAROUSEL
+           Responsável: [Nilson Barboza - Frontend]
+           Descrição: Carrossel de imagens hero com call-to-actions
+           =========================================== -->
+        <section id="slide" class="carousel_wrapper">
+            <div class="carousel_inner">
+    
+                <!-- SLIDE 1 -->
+                <div class="carousel_item active">
+                    <div class="carousel_background">
+                        <img src="src/assets/img/slide/slide1.jpg" alt="1">
+                    </div>
+                    <div class="carousel_caption">
+                        <h2>Transformando a Inclusão: A Importância da Acessibilidade</h2>
+                        <p>A falta de acessibilidade pode limitar a participação de pessoas com deficiência na sociedade</p>
+                        <a href="#" class="btn_cta">Leia mais</a>
+                    </div>
+                </div>
+    
+                <!-- SLIDE 2 -->
+                <div class="carousel_item">
+                    <div class="carousel_background">
+                        <img src="src/assets/img/slide/slide2.jpg" alt="2">
+                    </div>
+                    <div class="carousel_caption">
+                        <h2>Transformando a Inclusão: A Importância da Acessibilidade</h2>
+                        <p>A falta de acessibilidade pode limitar a participação de pessoas com deficiência na sociedade</p>
+                        <a href="#" class="btn_cta">Doe agora</a>
+                    </div>
+                </div>
+    
+                <!-- SLIDE 3 -->
+                <div class="carousel_item">
+                    <div class="carousel_background">
+                        <img src="src/assets/img/slide/slide3.jpg" alt="3">
+                    </div>
+                    <div class="carousel_caption">
+                        <h2>Transformando a Inclusão: A Importância da Acessibilidade</h2>
+                        <p>A falta de acessibilidade pode limitar a participação de pessoas com deficiência na sociedade</p>
+                        <a href="#" class="btn_cta">Faça parte</a>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <!-- CONTROLES -->
+            <button class="carousel_btn prev_btn">‹</button>
+            <button class="carousel_btn next_btn">›</button>
+    
+            <!-- INDICADORES -->
+            <div class="carousel_indicators">
+                <span class="indicator active"></span>
+                <span class="indicator"></span>
+                <span class="indicator"></span>
+            </div>
+    
         </section>
-
-        <!-- ==========================================
-       FEATURE 02: HERO SECTION - CAROUSEL
-       Responsável: [Nilson Barboza - Frontend]
-       Descrição: Carrossel de imagens hero com call-to-actions
-       =========================================== -->
-        <section id="" class="content">
-            <h1>FEATURE 02: HERO SECTION - CAROUSEL</h1>
-            <p>Carrossel de imagens hero com call-to-actions</p>
-            <p>O CSS está estruturado com variáveis no :root para fácil customização de cores, tamanhos e espaçamentos.
-            </p>
-        </section>
-
+    
+    
         <!-- ==========================================
        FEATURE 03: SECTION - CAUSAS E CAMPANHAS
        Responsável: [DYTO]
@@ -312,5 +347,8 @@
         </section>
     </foster>
 </body>
+
+<!--SCRIPTS-->
+<script src="/js/carousel.js"></script>
 
 </html>
