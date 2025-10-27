@@ -69,8 +69,7 @@
 /* Imagem Destacada (Figure) */
 .post-imagem-destacada {
     margin: 0; 
-    margin-bottom: 1rem;
-    line-height: 0; 
+    margin-bottom: 1rem; 
 }
 
 .post-imagem-destacada .imagem-post {
@@ -85,7 +84,7 @@
     font-weight: bold;
     padding: 0; 
     margin-bottom: 0.5rem;
-    line-height: 1.2;
+    line-height: 1.1;
 }
 
 .post-titulo a {

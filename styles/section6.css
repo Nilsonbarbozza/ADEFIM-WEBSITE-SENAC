@@ -73,17 +73,17 @@
 .cartao-descricao {
     font-size: 1rem;
     color: #666666;
-    line-height: 1.5;
+    line-height: 1.1;
     margin-bottom: 1.5rem;
     
-    margin-top: auto; 
+    margin-top: 8px; 
 }
 
 /* Bloco de Botões (Equivalente a .wp-block-buttons) */
 .bloco-botoes {
     display: flex;
     width: 100%;
-    margin-top: 1rem;
+    margin-top: auto;
 }
 
 .bloco-botoes.justificar-centro {
