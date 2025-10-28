@@ -1,12 +1,354 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/styles.css">
-    <title>Inicio - Adefim</title>
+    <title>Pagina inicial - ADEFIM</title>
+    <link rel="stylesheet" href="styles/index.css">
 </head>
+
 <body>
-    <h1>Bienvenido a Adefim</h1>
+    <!-- ==========================================
+       FEATURE 01: HEADER - NAVEGAÇÃO PRINCIPAL
+       Responsável: [Nilson Barboza - Frontend]
+       Descrição: Header fixo com logo e menu de navegação
+       =========================================== -->
+    <header class="top-navigation navbar" id="header">
+        <!--CONTAINER 1: LOGO-->
+        <a class="site-logo" href="#">
+            <img alt="AdefimLogo" src="\src\assets\img\logo.png" />
+        </a>
+        <!-- CONTAINER 2: >NAVEGAÇÃO PRINCIPAL -->
+        <nav class="nav-menu" id="nav-menu">
+            <ul>
+                <!-- ITEM 1: Informe-se
+                     Cor: #C1C1C1 | Font: Roboto 16px | Hover: Border 2px -->
+                <li
+                    class="nav-item menu-item menu-item-type-custom menu-item-object-custom menu-item-37848 menu-item-has-children">
+                    <a class="nav-link" href="">
+                        Informe-se
+                    </a>
+                </li>
+                <!-- ITEM 2: Como ajudar -->
+                <li
+                    class="nav-item menu-item menu-item-type-custom menu-item-object-custom menu-item-37848 menu-item-has-children">
+                    <a class="nav-link" data-ga-action="Como ajudar" data-ga-category="Menu Navigation"
+                        data-ga-label="Homepage" href="https://www.greenpeace.org/brasil/como-ajudar/" target="">
+                        Como ajudar
+                    </a>
+                </li>
+                <!-- ITEM 3: Notícias e histórias -->
+                <li
+                    class="nav-item menu-item menu-item-type-custom menu-item-object-custom menu-item-37853 menu-item-has-children">
+                    <a class="nav-link" data-ga-action="Noticias e historias" data-ga-category="Menu Navigation"
+                        data-ga-label="Homepage" href="https://www.greenpeace.org/brasil/noticias-e-historias/"
+                        target="">
+                        Notícias e histórias
+                    </a>
+                </li>
+                <!-- ITEM 4: Sobre nós -->
+                <li
+                    class="nav-item menu-item menu-item-type-custom menu-item-object-custom menu-item-37859 menu-item-has-children">
+                    <a class="nav-link" data-ga-action="Sobre nos" data-ga-category="Menu Navigation"
+                        data-ga-label="Homepage" href="https://www.greenpeace.org/brasil/quem-somos/" target="">
+                        Sobre nós
+                    </a>
+                </li>
+                <!-- BOTÃO DOAR
+                     Largura: 116px | Altura: 44px | Padding lateral: 12px | Padding top: 2px -->
+                <li class="nav-donate">
+                    <button class="btn btn-donate" data-ga-action="Donate" data-ga-category="Menu Navigation"
+                        data-ga-label="Homepage" role="link">
+                        Doe agora
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- END HEADER -->
+    <main>
+        <!--==========================================
+           FEATURE 02: HERO SECTION - CAROUSEL
+           Responsável: [Nilson Barboza - Frontend]
+           Descrição: Carrossel de imagens hero com call-to-actions
+           =========================================== -->
+        <section id="slide" class="carousel_wrapper">
+            <div class="carousel_inner">
+    
+                <!-- SLIDE 1 -->
+                <div class="carousel_item active">
+                    <div class="carousel_background">
+                        <img src="src/assets/img/slide/slide1.jpg" alt="1">
+                    </div>
+                    <div class="carousel_caption">
+                        <h2>Transformando a Inclusão: A Importância da Acessibilidade</h2>
+                        <p>A falta de acessibilidade pode limitar a participação de pessoas com deficiência na sociedade</p>
+                        <a href="#" class="btn_cta">Leia mais</a>
+                    </div>
+                </div>
+    
+                <!-- SLIDE 2 -->
+                <div class="carousel_item">
+                    <div class="carousel_background">
+                        <img src="src/assets/img/slide/slide2.jpg" alt="2">
+                    </div>
+                    <div class="carousel_caption">
+                        <h2>Transformando a Inclusão: A Importância da Acessibilidade</h2>
+                        <p>A falta de acessibilidade pode limitar a participação de pessoas com deficiência na sociedade</p>
+                        <a href="#" class="btn_cta">Doe agora</a>
+                    </div>
+                </div>
+    
+                <!-- SLIDE 3 -->
+                <div class="carousel_item">
+                    <div class="carousel_background">
+                        <img src="src/assets/img/slide/slide3.jpg" alt="3">
+                    </div>
+                    <div class="carousel_caption">
+                        <h2>Transformando a Inclusão: A Importância da Acessibilidade</h2>
+                        <p>A falta de acessibilidade pode limitar a participação de pessoas com deficiência na sociedade</p>
+                        <a href="#" class="btn_cta">Faça parte</a>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <!-- CONTROLES -->
+            <button class="carousel_btn prev_btn">‹</button>
+            <button class="carousel_btn next_btn">›</button>
+    
+            <!-- INDICADORES -->
+            <div class="carousel_indicators">
+                <span class="indicator active"></span>
+                <span class="indicator"></span>
+                <span class="indicator"></span>
+            </div>
+    
+        </section>
+    
+    
+        <!-- ==========================================
+       FEATURE 03: SECTION - CAUSAS E CAMPANHAS
+       Responsável: [DYTO]
+       Descrição: Grid de 8 cards informativos das causas
+       =========================================== -->
+        <section id="" class="content">
+            <h1>FEATURE 03: SECTION - CAUSAS E CAMPANHAS</h1>
+            <p>Grid de 8 cards informativos das causas</p>
+            <p>O CSS está estruturado com variáveis no :root para fácil customização de cores, tamanhos e espaçamentos.
+            </p>
+        </section>
+
+
+        <!-- ==========================================
+       FEATURE 04: SECTION - APOIE UMA CAUSA
+       Responsável: [Marcos Diego]
+       Descrição: 3 cards de apoio com imagens e CTAs
+       =========================================== -->
+        <section id="" class="content">
+            <h1>FEATURE 04: SECTION - APOIE UMA CAUSA</h1>
+            <p>3 cards de apoio com imagens e CTAs</p>
+            <p>O CSS está estruturado com variáveis no :root para fácil customização de cores, tamanhos e espaçamentos.
+            </p>
+        </section>
+
+        <!-- ==========================================
+       FEATURE 05: SECTION - SOBRE O ADEFIM
+       Responsável: [Samuel]
+       Descrição: 2 blocos de texto + imagem (alternados)
+       =========================================== -->
+    <section id="" class="FEATURE05">
+        <h1 class="h1">ADEFIM MOSSORÓ</h1>
+        
+            <p><strong>ADEFIM</strong> (Associação de Defesa dos Direitos das Pessoas com Deficiência de Mossoró e Região) é uma instituição sem fins lucrativos que atua há anos na defesa e promoção dos direitos das pessoas com deficiência na região de Mossoró, Rio Grande do Norte.</p>
+            <br>
+                <p><strong>Missão:</strong> Promover a inclusão social, a acessibilidade e a garantia dos direitos das pessoas com deficiência, trabalhando para construir uma sociedade mais justa e igualitária onde todas as pessoas tenham suas potencialidades reconhecidas e valorizadas.</p>
+            <br>
+            <p>Fundada por familiares de pessoas com deficiência e por profissionais comprometidos com a causa, a ADEFIM tornou-se referência no acolhimento, orientação e encaminhamento de casos relacionados aos direitos das pessoas com deficiência, oferecendo suporte integral às famílias.</p>
+        
+
+        <div class="whing">
+            <img src="src\assets\img\FOTOS DA ADEFIM E DE MARTHA 008.jpg" alt="Foto do ADEFIM">
+        </div>
+
+            <h2>Atuação e Projetos</h2>
+            <p>A associação desenvolve diversos projetos e ações voltados para a inclusão social e garantia de direitos. Suas principais áreas de atuação incluem:</p>
+            <br>
+            <ul>
+                <li><strong>Advocacia e Orientação Jurídica:</strong> Assessoria jurídicia gratuita para famílias e pessoas com deficiência</li>
+                <br>
+                <li><strong>Inclusão no Mercado de Trabalho:</strong> Programas de capacitação profissional e inserção laboral</li>
+                <br>
+                <li><strong>Campanhas de Conscientização:</strong> Eventos educativos sobre acessibilidade e direitos humanos</li>
+                <br>
+                <li><strong>Apoio Psicossocial:</strong> Suporte Psicológico para pessoas com deficiência e seus familiares.</li>
+            </ul>
+                <br>
+                <p><strong>Visão:</strong> Ser reconhecida como principal referência na defesa dos direitos das pessoas com deficiência na região Oeste do Rio Grande do Norte, promovendo transformação social e garatindo que toda pessoa com deficiência tenha os seus direitos reservados.</p>
+                <br>
+                <p>Atráves de seu trabalho consistente e dedicado, a ADEFIM tem contribuído significativamente para a construção de uma Mossoró mais inclusiva e acessível para todos.</p>
+    </section>
+    <!-- ==========================================
+       FEATURE 06: SECTION - Ajude a construir um futuro melhor
+       Responsável: [NOME DO DEV]
+       Descrição: Carrossel de informativos para ajudar a causa
+       =========================================== -->
+        <section id="" class="content">
+            <h1>FEATURE 06: SECTION - AJUDE A CONSTRUIR UM FUTURO MELHOR</h1>
+            <p>Carrossel de informativos para ajudar a causa</p>
+            <p>O CSS está estruturado com variáveis no :root para fácil customização de cores, tamanhos e espaçamentos.
+            </p>
+        </section>
+
+        <!-- ==========================================
+    FEATURE 07: NOTICIAS - ULTIMAS NOTICIAS RELEVANTES
+    Responsável: [dylhermando]
+    Descrição: Grid 4 cards com ultimas noticias relevantes
+    =========================================== -->
+        <section id="" class="content">
+            <div class="bloco-colunas">
+                <div class="coluna alinhamento-vertical-inferior">
+                    <h2 class="titulo-esquerda">
+                        Últimas notícias
+                    </h2>
+                </div>
+                <div class="coluna">
+                    <h3 class="titulo-direita fonte-roboto tamanho-medio">
+                        <a href="">
+                            Ler todas as notícias
+                        </a>
+                    </h3>
+                </div>
+            </div>
+            <div class="bloco-consulta">
+
+                <ul class="lista-posts grade-4-colunas">
+
+                    <li class="item-post">
+
+                        <figure class="post-imagem-destacada">
+                            <a href="[LINK_DO_POST]" target="_self">
+                                <img alt="Lideranças indígenas cobram no STF a inconstitucionalidade da Lei do Marco Temporal"
+                                    class="imagem-post" loading="lazy" src="src/assets/img/logo-adefin.png" />
+                            </a>
+                        </figure>
+
+                        <h2 class="post-titulo">
+                            <a href="[LINK_DO_POST]" target="_self">
+                                Pessoas desistem do curso de programador web e um dos grupos do trabalho integrador é dissolvido
+                            </a>
+                        </h2>
+
+                        <div class="post-resumo">
+                            <p class="resumo-texto">
+                                Com apenas 6 pessoas na turma agora, os remanescentes do curso se juntam afim de concluir o curso com honra.
+                            </p>
+                            <p class="resumo-link-container">
+                                <a class="resumo-link-saiba-mais" href="[LINK_DO_POST]">
+                                    Saiba mais
+                                </a>
+                            </p>
+                        </div>
+
+                    </li>
+                    <li class="item-post">
+                        <figure class="post-imagem-destacada">
+                            <a href="[LINK_DO_POST]" target="_self">
+                                <img alt="Lideranças indígenas cobram no STF a inconstitucionalidade da Lei do Marco Temporal"
+                                    class="imagem-post" loading="lazy" src="src/assets/img/Adefim Evento.png" />
+                            </a>
+                        </figure>
+
+                        <h2 class="post-titulo">
+                            <a href="[LINK_DO_POST]" target="_self">
+                                No dia 21/09/2025 na Praça do Teatro Di-Huit Rosado a partir das 16H a inclusão estará em alta!!
+                            </a>
+                        </h2>
+
+                        <div class="post-resumo">
+                            <p class="resumo-texto">
+                                Em comemoração ao Dia Nacional de Luta da Pessoa Com Deficiência haverá um evento cheio de ações muita música e entretenimento para você e sua família!!! Vem se divertir, e viver um domingo inclusivo. 
+                            </p>
+                            <p class="resumo-link-container">
+                                <a class="resumo-link-saiba-mais" href="[LINK_DO_POST]">
+                                    Saiba mais
+                                </a>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="item-post">
+                        <figure class="post-imagem-destacada">
+                            <a href="[LINK_DO_POST]" target="_self">
+                                <img alt="Lideranças indígenas cobram no STF a inconstitucionalidade da Lei do Marco Temporal"
+                                    class="imagem-post" loading="lazy" src="src/assets/img/ADEFIM lançamento de projeto.png" />
+                            </a>
+                        </figure>
+
+                        <h2 class="post-titulo">
+                            <a href="[LINK_DO_POST]" target="_self">
+                                Mais um lançamento de mais um projeto, dessa vez o "Inclusão Sobre Rodas"
+                            </a>
+                        </h2>
+
+                        <div class="post-resumo">
+                            <p class="resumo-texto">
+                                muito bommmm mais uma opção de lazer para as pessoas com deficiência, e claro que a ADEFIM não podia faltar a esse evento maravilhoso!! E no finalzinho teve aquele bate-papo gostoso na @mixsorvetesmossoro do nosso amigo Gildo Bento!! Que venham mais dias como esse!!!
+                            </p>
+                            <p class="resumo-link-container">
+                                <a class="resumo-link-saiba-mais" href="[LINK_DO_POST]">
+                                    Saiba mais
+                                </a>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="item-post">
+                        <figure class="post-imagem-destacada">
+                            <a href="[LINK_DO_POST]" target="_self">
+                                <img alt="Lideranças indígenas cobram no STF a inconstitucionalidade da Lei do Marco Temporal"
+                                    class="imagem-post" loading="lazy" src="src/assets/img/ADEFIM noticias setembro.png" />
+                            </a>
+                        </figure>
+
+                        <h2 class="post-titulo">
+                            <a href="[LINK_DO_POST]" target="_self">
+                                Confira, tudo que rolou no mês de setembro
+                            </a>
+                        </h2>
+
+                        <div class="post-resumo">
+                            <p class="resumo-texto">
+                                O mês de setembro foi muito intenso, cheio de oportunidades de se mostrar o que é a inclusão no sentido exato da palavra, é uma luta diária, com conquistas lentas, afinal é um processo contínuo, árduo mas de longe capaz de nos fazer desistir. Na caminhada encontramos muitos parceiros que unem forças e nos faz querer prosseguir!!!
+                            </p>
+                            <p class="resumo-link-container">
+                                <a class="resumo-link-saiba-mais" href="[LINK_DO_POST]">
+                                    Saiba mais
+                                </a>
+                            </p>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==========================================
+       FEATURE 08: FOOTER - NAVEGAVEL - REDES SOCIAIS
+       Responsável: [DYTO]
+       Descrição: Informações de contato, links úteis e redes sociais
+       =========================================== -->
+    <foster>
+        <section id="" class="content">
+            <h1>FEATURE 07: FOOTER - NAVEGAVEL - REDES SOCIAIS</h1>
+            <p>Informações de contato, links úteis e redes sociais</p>
+            <p>O CSS está estruturado com variáveis no :root para fácil customização de cores, tamanhos e espaçamentos.
+            </p>
+        </section>
+    </foster>
 </body>
+
+<!--SCRIPTS-->
+<script src="/js/carousel.js"></script>
+
 </html>
