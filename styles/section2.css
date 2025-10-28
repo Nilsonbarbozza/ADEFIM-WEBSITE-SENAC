@@ -1,0 +1,117 @@
+/* START CAROUSEL */
+.carousel_wrapper {
+  position: relative;
+  height: 90vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel_inner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80%;
+  transition: transform .7s ease-in-out;
+}
+
+.carousel_item {
+  position: relative;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.carousel_background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(50%); /* 100% é normal, valores menores escurecem */
+}
+
+@media (max-width: 768px) {
+  .carousel_background img {
+    object-position: center top;
+  }
+}
+
+/* CONTENT CAROUSEL */
+.carousel_caption {
+  position: absolute;
+  bottom: 124px;
+  left: 104px;
+  max-width: 600px;
+  background-color: #00000041;
+  padding: 12px 16px;
+  border-radius: 8px;
+}
+
+.carousel_caption h2 {
+  font-size: 2.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 8px;
+  color: white;
+  line-height: 1.1;
+  letter-spacing: 1px; /* Aumenta o espaçamento entre letras */
+  word-spacing: 2px;
+}
+
+.carousel_caption p {
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+  color: white;
+  line-height: 1.1;
+}
+
+.btn_cta {
+  display: inline-block;
+  padding: 12px 22px;
+  background: var(--color-primary);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: var(--border-radius);
+}
+
+/* BOTÃO PASSAR */
+.carousel_btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #00000041;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+.prev_btn {
+  left: 10px;
+}
+
+.next_btn {
+  right: 10px;
+}
+
+/* INDICADORES SLIDE */
+.carousel_indicators {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+
+.indicator.active {
+  background: #fff;
+}
