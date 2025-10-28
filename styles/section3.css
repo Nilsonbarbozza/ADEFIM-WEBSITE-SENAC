@@ -51,7 +51,7 @@
 }
 
 .FEATURE03 a {
-    color: var(--color-primary);
+    color: var(--color-primary-hover);
     font-weight: 500;
     transition: color var(--transition-speed) var(--transition-ease);
 }
@@ -74,4 +74,10 @@
     .FEATURE03 {
         text-align: center;
     }
+}
+
+.FEA03 {
+    padding: var(--spacing-xl);
+    max-width: 1200px;
+    margin: 0 auto;
 }
