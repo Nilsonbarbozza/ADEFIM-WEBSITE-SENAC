@@ -1,6 +1,8 @@
 /* ========================================
            SEÇÃO: CAUSAS E CAMPANHAS FEATURE 03
 ======================================== */
+
+
 #causas-campanhas {
     background-color: var(--bg-primary);
     color: var(--color-text-dark);
@@ -24,7 +26,7 @@
 }
 
 .FEATURE03 {
-    background-color: var(--color-primary-hover);
+    background-color: var(--color-primary);
     border-radius: var(--border-radius);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     padding: var(--spacing-lg);
@@ -51,7 +53,7 @@
 }
 
 .FEATURE03 a {
-    color: var(--color-primary);
+    color: var(--color-primary-hover);
     font-weight: 500;
     transition: color var(--transition-speed) var(--transition-ease);
 }
@@ -74,4 +76,10 @@
     .FEATURE03 {
         text-align: center;
     }
+}
+
+.FEA03 {
+    padding: var(--spacing-xl);
+    max-width: 1200px;
+    margin: 0 auto;
 }
