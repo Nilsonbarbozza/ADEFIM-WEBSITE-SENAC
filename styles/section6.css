@@ -24,7 +24,6 @@
     background-color: #ffffff;
     padding: 0.5rem;
     border-radius: 8px;
-    overflow: hidden;
     
     /* Sombra (Equivalente a gpbr-has-shadow-background) */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -35,7 +34,7 @@
 
 /* Imagem e Título do Cartão */
 .cartao-imagem {
-    margin: 0 -1.5rem 1rem -1.5rem; 
+    margin: 0; 
     overflow: hidden;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -44,8 +43,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     display: inline-block ;
-    width: 370px;
-    height: 200px;
+    width: 100%;
+    height: 300px;
 }
 
 .cartao-imagem .imagem-completa {
