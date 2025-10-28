@@ -1,0 +1,83 @@
+/* ========================================
+           SEÇÃO: CAUSAS E CAMPANHAS FEATURE 03
+======================================== */
+#causas-campanhas {
+    background-color: var(--bg-primary);
+    color: var(--color-text-dark);
+    text-align: center;
+    padding-top: var(--spacing-xl);
+    padding-bottom: var(--spacing-xl);
+}
+
+#causas-campanhas .section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-xl);
+}
+
+.FEATURE03s-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: var(--spacing-xl);
+    padding: 0 var(--spacing-lg);
+}
+
+.FEATURE03 {
+    background-color: var(--color-primary);
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    padding: var(--spacing-lg);
+    transition: transform var(--transition-speed) var(--transition-ease),
+        box-shadow var(--transition-speed) var(--transition-ease);
+    text-align: left;
+}
+
+.FEATURE03:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.FEATURE03 h3 {
+    color: aliceblue;
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.FEATURE03 p {
+    color: aliceblue;
+    font-size: var(--font-size-base);
+    line-height: 1.6;
+}
+
+.FEATURE03 a {
+    color: var(--color-primary-hover);
+    font-weight: 500;
+    transition: color var(--transition-speed) var(--transition-ease);
+}
+
+.FEATURE03 a:hover {
+    color: var(--color-primary-hover);
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    #causas-campanhas .section-title {
+        font-size: 1.5rem;
+    }
+
+    .FEATURE03s-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .FEATURE03 {
+        text-align: center;
+    }
+}
+
+.FEA03 {
+    padding: var(--spacing-xl);
+    max-width: 1200px;
+    margin: 0 auto;
+}
