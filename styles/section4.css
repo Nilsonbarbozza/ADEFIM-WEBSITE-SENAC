@@ -1,0 +1,101 @@
+/* ========================================
+    FEATURE 04: SECTION - APOIE UMA CAUSA
+       Responsável: [Marcos Diego]
+======================================== */
+
+#s04 {
+    display: flex;
+    height: 701px;
+    position: relative;
+    background-color: black;
+    align-items: center;
+    border-radius: 12px;
+    
+    padding: var(--spacing-xl);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ========================================
+    Textos de s04
+======================================== */
+#texto04 {
+    width: 321;
+    z-index: 1;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff41;
+    border-radius: 8px;
+    padding: 12px 16px;
+}
+
+#texto04 h2 {
+    width: 301px;
+    font-weight: bold;
+    line-height: 1.1; 
+    letter-spacing: 1px; 
+    word-spacing: 2px;
+    color: white;
+}
+
+#texto04 p {
+    margin-top: 15px;
+    width: 273px;
+    line-height: 1.1;
+    color: white;
+}
+
+/* ========================================
+    IMG de s04
+======================================== */
+#s04 img {
+    position: absolute;
+    z-index: 0;
+    height: 701px;
+    width: 701px;
+    border-radius: 12px;
+
+    position: absolute;
+    right: 0;
+
+    -webkit-mask-mode: luminance;
+    mask-mode: luminance;
+
+    -webkit-mask-image: linear-gradient(to left, white 50%, black 100%);
+    mask-image: linear-gradient(to left, white 50%, black 100%);
+
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: left top;
+    mask-position: left top;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
+
+/* ========================================
+    buttom de s04
+======================================== */
+#button04 {
+    margin: 15px 0px 3px;
+    display: flex;
+    justify-content: center;
+}
+
+#button04 .btn-donate{
+    margin-top: px;
+    width: 174px;
+    height: 66px;
+}
+
+#button04 .btn-donate:hover {
+    width: 180px;
+    height: 68px;
+    box-shadow: 0 4px 12px rgba(0, 145, 224, 0.3);
+}
+
+#button04 .btn-donate:active {
+    width: 174px;
+    height: 66px;
+    box-shadow: 0 2px 6px rgba(0, 145, 224, 0.3);
+}
