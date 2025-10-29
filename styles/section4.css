@@ -11,6 +11,9 @@
     align-items: center;
     border-radius: 12px;
     
+    padding: var(--spacing-xl);
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* ========================================
@@ -73,24 +76,25 @@
 /* ========================================
     buttom de s04
 ======================================== */
-#button {
+#button04 {
+    margin: 15px 0px 3px;
     display: flex;
     justify-content: center;
 }
 
-#button .btn-donate{
+#button04 .btn-donate{
     margin-top: px;
     width: 174px;
     height: 66px;
 }
 
-#button .btn-donate:hover {
+#button04 .btn-donate:hover {
     width: 180px;
     height: 68px;
     box-shadow: 0 4px 12px rgba(0, 145, 224, 0.3);
 }
 
-#button .btn-donate:active {
+#button04 .btn-donate:active {
     width: 174px;
     height: 66px;
     box-shadow: 0 2px 6px rgba(0, 145, 224, 0.3);
