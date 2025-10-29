@@ -4,14 +4,14 @@
 .top-navigation {
     width: 100%;
     height: var(--header-height);
-    background-color: var(--bg-primary);
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    position: sticky;
+    align-items: center;
+    position: fixed;
     top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0);
 }
 
 /* ========================================
@@ -69,9 +69,11 @@
            LINKS DE NAVEGAÇÃO
 ======================================== */
 .nav-link {
-    color: var(--color-black);
+    color: var(--color-white);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.488);
+    font-family: Arial, Helvetica, sans-serif;
     font-size: var(--font-size-nav);
-    font-weight: 400;
+    font-weight: 600;
     padding: 0 var(--spacing-sm);
     display: flex;
     align-items: center;
@@ -95,7 +97,7 @@
 }
 
 .nav-link:hover {
-    color: var(--color-text-dark);
+    color: var(--color-primary);
 }
 
 .nav-link:hover::after {
@@ -103,66 +105,9 @@
 }
 
 /* ========================================
-    BOTÃO DROPDOWN (Seta)
-======================================== */
-.accessible-nav-link {
-    width: 16px;
-    height: 16px;
-    margin-left: var(--spacing-xs);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0.6;
-    transition: all var(--transition-speed) var(--transition-ease);
-    position: relative;
-}
-
-.accessible-nav-link::before {
-    content: '▼';
-    font-size: 10px;
-    color: var(--color-text-primary);
-}
-
-.accessible-nav-link:hover {
-    opacity: 1;
-    transform: translateY(2px);
-}
-
-.nav-item:hover .accessible-nav-link::before {
-    color: var(--color-text-dark);
-}
-
-/* ========================================
         SUBMENU (Dropdown)
 ======================================== */
-.nav-submenu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: var(--bg-primary);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
-    border-radius: var(--border-radius);
-    padding: var(--spacing-md);
-    min-width: 200px;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-10px);
-    transition: all var(--transition-speed) var(--transition-ease);
-}
 
-.nav-item:hover .nav-submenu {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
-
-/* ========================================
-BOTÃO DOAR
-Largura: 116px
-Altura: 44px
-Padding lateral: 12px
-Padding top: 2px
-======================================== */
 .nav-donate {
     margin-left: var(--spacing-md);
 }
@@ -176,7 +121,8 @@ Padding top: 2px
     background-color: var(--color-button);
     color: var(--color-white);
     font-size: var(--font-size-base);
-    font-weight: 500;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
     border-radius: var(--border-radius);
     display: flex;
     align-items: center;
@@ -256,23 +202,4 @@ Padding top: 2px
     .btn-donate {
         width: 100%;
     }
-}
-
-/* ========================================
-    DEMO - CONTEÚDO ABAIXO DO HEADER
-======================================== */
-.content {
-    padding: var(--spacing-xl);
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.demo-content h1 {
-    color: var(--color-primary);
-    margin-bottom: var(--spacing-lg);
-}
-
-.demo-content p {
-    color: var(--color-text-light);
-    line-height: 1.6;
 }
