@@ -1,0 +1,45 @@
+/* Css para a a feature 05*/
+.whing img{
+    width: 1000px;
+    height: 550px;
+    background-image: url(src\assets\img\FotodaAssociaçãodeDeficientes.png) center/cover no-repeat;
+    border-radius: 50px 0;
+}
+.FEATURE05 {
+    background-color: #0091E0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: var(--spacing-xl);
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.FEATURE05 h1 {
+    color: aliceblue;
+    font-size: 1.25rem;
+    margin: var(--spacing-sm);
+}
+.FEATURE05 h2 {
+    color: aliceblue;
+    font-size: 2rem;
+    margin: var(--spacing-sm);
+}
+.FEATURE05 strong {
+    color: aliceblue;
+    font-size: 1.25rem;
+    margin: var(--spacing-sm);
+}
+.FEATURE05 p {
+    color: aliceblue;
+    font-size: 1.25rem;
+    margin: var(--spacing-sm);
+}
+.FEATURE05 ul {
+    color: aliceblue;
+    font-size: 1.25rem;
+    margin: var(--spacing-sm);
+}
+.FEATURE05 li {
+    color: aliceblue;
+    font-size: 1.30rem;
+    margin: var(--spacing-sm);
+}
