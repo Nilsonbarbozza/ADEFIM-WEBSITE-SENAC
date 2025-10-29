@@ -1,0 +1,144 @@
+.secao-titulo {
+    text-align: left; 
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Container de Colunas (Equivalente a .wp-block-columns .is-layout-flex) */
+.bloco-colunas-cta {
+    display: flex;
+    gap: 20px; 
+    flex-wrap: wrap; 
+    margin: 0 auto;
+    max-width: 1200px; 
+}
+
+/* Estilo do Cartão/Coluna (Equivalente a .wp-block-column .gpbr-has-shadow-background) */
+.coluna-cta {
+    flex-grow: 1;
+    flex-basis: 0; 
+    min-width: 300px; 
+    
+    /* Estilo do Cartão */
+    background-color: #ffffff;
+    padding: 0.5rem;
+    border-radius: 8px;
+    
+    /* Sombra (Equivalente a gpbr-has-shadow-background) */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    
+    display: flex;
+    flex-direction: column;
+}
+
+/* Imagem e Título do Cartão */
+.cartao-imagem {
+    margin: 0; 
+    overflow: hidden;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    line-height: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block ;
+    width: 100%;
+    height: 300px;
+}
+
+.cartao-imagem .imagem-completa {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.cartao-titulo {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.cartao-titulo a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.cartao-titulo a:hover {
+    text-decoration: underline;
+}
+
+/* Descrição do Cartão */
+.cartao-descricao {
+    font-size: 1rem;
+    color: #666666;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    
+    margin-top: 8px; 
+}
+
+/* Bloco de Botões (Equivalente a .wp-block-buttons) */
+.bloco-botoes {
+    display: flex;
+    width: 100%;
+    margin-top: auto;
+}
+
+.bloco-botoes.justificar-centro {
+    justify-content: center;
+}
+
+.bloco-botao-item {
+    width: 100%; 
+}
+
+.bloco-botao-item.largura-50 {
+    max-width: 50%; 
+}
+
+.bloco-botao-item.estilo-cta .botao-link {
+    display: block;
+    text-align: center;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    background-color: #0091E0; 
+    color: #FFFFFF;
+    border-radius: 4px;
+    font-size: 0.9rem; 
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.bloco-botao-item.estilo-cta .botao-link:hover {
+    background-color: #0077c2; 
+}
+
+
+/* ========================================
+    RESPONSIVIDADE (Quebra de Layout)
+======================================== */
+
+@media (max-width: 900px) {
+    /* Em telas médias, empilha para 2 colunas */
+    .bloco-colunas-cta {
+        gap: 15px;
+    }
+    .coluna-cta {
+        flex-basis: calc(50% - 15px); 
+        min-width: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .coluna-cta {
+        width: 100%;
+        flex-basis: 100%;
+        margin-bottom: 15px;
+    }
+    
+    .bloco-botao-item.largura-50 {
+        max-width: 80%;
+    }
+}
