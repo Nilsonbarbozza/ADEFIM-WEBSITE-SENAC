@@ -18,7 +18,7 @@
     Textos de s04
 ======================================== */
 #texto04 {
-    width: 550px;
+    width: 450px;
     z-index: 1;
     margin-left: 20px;
     display: flex;
@@ -31,7 +31,7 @@
     font-size: 40px;
     /*font-weight: bold;*/
     font-weight: 600;
-    line-height: 1.1; 
+    line-height: var(--line-height); 
     letter-spacing: 1px; 
     word-spacing: 2px;
     color: rgb(0, 0, 0);
@@ -39,8 +39,7 @@
 
 #texto04 p {
     font-size: 19px;
-    margin-top: 20px;
-    margin-top: 15px;
+    margin-top: 30px;
     line-height: 2rem;
     color: rgb(0, 0, 0);
 }
@@ -50,7 +49,8 @@
 ======================================== */
 #s04 img {
     height: 450px;
-    width: 450px;
+    width: 550px;
+    box-shadow: 8px -8px 24px rgb(0 0 0 / 0.21);
 }
 
 /* ========================================
@@ -64,7 +64,7 @@
 
 #button04 button{
     width: 100%;
-    height: 66px;
+    height: 44px;
     border-style: solid;
     border-color: var(--color-primary);
     background-color: white;
