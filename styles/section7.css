@@ -18,7 +18,7 @@
 
 .titulo-esquerda {
     text-align: left;
-    margin: 0; 
+    margin-bottom: 20px; 
 }
 
 .titulo-direita {
@@ -69,13 +69,14 @@
 /* Imagem Destacada (Figure) */
 .post-imagem-destacada {
     margin: 0; 
-    margin-bottom: 1rem; 
+    margin-bottom: 1rem;
+    display: block;
+    object-fit: contain;
 }
 
 .post-imagem-destacada .imagem-post {
     width: 100%;
     height: 200px; 
-    object-fit: cover;
 }
 
 /* Título do Post (h2) */
@@ -122,6 +123,11 @@
 
 .resumo-link-saiba-mais:hover {
     text-decoration: underline;
+}
+.content {
+    padding: var(--spacing-xl);
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 
