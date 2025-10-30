@@ -7,7 +7,7 @@
     color: var(--color-white);
     padding-top: var(--spacing-xl);
     padding-bottom: var(--spacing-xl);
-    border-top: 4px solid var(--color-primary-hover);
+    border-top: 4px solid var(--color-primary);
     padding-left: 70px;
     padding-right: 70px;
 }
@@ -97,4 +97,10 @@
         width: 100%;
         justify-content: center;
     }
+}
+
+.footer img{
+width: 20px;
+height: 20px;
+margin-left: 10px;
 }

@@ -1,90 +1,74 @@
-/* ========================================
-           SEÇÃO: CAUSAS E CAMPANHAS FEATURE 03
-======================================== */
+/* ===== NOVO ESTILO: FEATURE 03 ===== */
 #causas-campanhas {
-    background-color: var(--bg-primary);
-    color: var(--color-text-dark);
+    background-color: #f6f9fb;
     text-align: center;
-    padding-top: var(--spacing-xl);
-    padding-bottom: var(--spacing-xl);
-}
-
-#causas-campanhas .section-title {
-    font-size: 2rem;
-    font-weight: 600;
-    color: var(--color-primary);
-    margin-bottom: var(--spacing-xl);
-}
-
-.FEATURE03s-grid {
+    padding: 80px 20px;
+  }
+  
+  #causas-campanhas .section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #003366;
+    margin-bottom: 15px;
+  }
+  
+  #causas-campanhas p.subtitulo {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 50px;
+  }
+  
+  .FEATURE03s-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: var(--spacing-xl);
-    padding: 0 var(--spacing-lg);
-}
-
-.FEATURE03 {
-    background-color: var(--color-primary);
-    border-radius: var(--border-radius);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    padding: var(--spacing-lg);
-    transition: transform var(--transition-speed) var(--transition-ease),
-        box-shadow var(--transition-speed) var(--transition-ease);
-    text-align: left;
-}
-
-.FEATURE03:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
-}
-
-.FEATURE03 h3 {
-    color: aliceblue;
-    font-size: 1.25rem;
-    margin-bottom: var(--spacing-sm);
-}
-
-.FEATURE03 p {
-    color: aliceblue;
-    font-size: var(--font-size-base);
-    line-height: 1.6;
-}
-
-.FEATURE03 a {
-    color: var(--color-primary-hover);
-    font-weight: 500;
-    transition: color var(--transition-speed) var(--transition-ease);
-}
-
-.FEATURE03 a:hover {
-    color: var(--color-primary-hover);
-}
-
-/* RESPONSIVIDADE */
-@media (max-width: 768px) {
-    #causas-campanhas .section-title {
-        font-size: 1.5rem;
-    }
-
-    .FEATURE03s-grid {
-        grid-template-columns: 1fr;
-        gap: var(--spacing-lg);
-    }
-
-    .FEATURE03 {
-        text-align: center;
-    }
-}
-
-.FEA03 {
-    padding: var(--spacing-xl);
+    gap: 25px;
+    justify-content: center;
     max-width: 1200px;
     margin: 0 auto;
-}
-
-.FEATURE03 button {
-padding: var(--spacing-xl);
-background-color: aliceblue;
-border-radius: var(--border-radius);
-font-size: large;
-}
+  }
+  
+  .FEATURE03 {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    padding: 35px 25px;
+    text-align: left;
+    transition: all 0.3s ease;
+  }
+  
+  .FEATURE03:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .FEATURE03 img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+  }
+  
+  .FEATURE03 h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #003366;
+    margin-bottom: 8px;
+  }
+  
+  .FEATURE03 p {
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 768px) {
+    #causas-campanhas .section-title {
+      font-size: 1.8rem;
+    }
+    .FEATURE03 {
+      text-align: center;
+    }
+  }
+  .FEATURE03 img{
+height: 60px;
+width: 60px;
+  }
