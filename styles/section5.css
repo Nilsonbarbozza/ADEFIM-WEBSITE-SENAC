@@ -1,45 +1,54 @@
 /* Css para a a feature 05*/
-.whing img{
-    width: 1000px;
-    height: 550px;
-    background-image: url(src\assets\img\FotodaAssociaçãodeDeficientes.png) center/cover no-repeat;
-    border-radius: 50px 0;
+.whing {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0;
+    padding: 40px;
+    flex: 1;
+    margin-left: 300px;
+    padding-top: 0.25px;
+}
+.whing img {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 10px;
 }
 .FEATURE05 {
-    background-color: #0091E0;
+    background-color: var(--bg-primary);
+    color: var(--color-text-dark);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: var(--spacing-xl);
-    max-width: 1200px;
+    max-width: 2500px;
     margin: 0 auto;
     border-radius: 10px;
 }
 .FEATURE05 h1 {
-    color: aliceblue;
-    font-size: 1.25rem;
-    margin: var(--spacing-sm);
+    color:black;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    margin-left: 250px;
 }
-.FEATURE05 h2 {
-    color: aliceblue;
-    font-size: 2rem;
-    margin: var(--spacing-sm);
+.FEATURE05 option {
+text-align: justify;
+    text-justify: inter-word;
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: auto;
 }
-.FEATURE05 strong {
-    color: aliceblue;
-    font-size: 1.25rem;
-    margin: var(--spacing-sm);
+
+.botão {
+    background: #2c5530;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
 }
-.FEATURE05 p {
-    color: aliceblue;
-    font-size: 1.25rem;
-    margin: var(--spacing-sm);
-}
-.FEATURE05 ul {
-    color: aliceblue;
-    font-size: 1.25rem;
-    margin: var(--spacing-sm);
-}
-.FEATURE05 li {
-    color: aliceblue;
-    font-size: 1.30rem;
-    margin: var(--spacing-sm);
+
+.botãohover{
+    background: #1e3a23;
 }
