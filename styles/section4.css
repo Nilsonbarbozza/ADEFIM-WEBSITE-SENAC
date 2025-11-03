@@ -6,12 +6,10 @@
 #s04 {
     display: flex;
     height: 701px;
-    position: relative;
-    background-color: black;
     align-items: center;
     border-radius: 12px;
+    justify-content:space-around;
     
-    padding: var(--spacing-xl);
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -20,82 +18,60 @@
     Textos de s04
 ======================================== */
 #texto04 {
-    width: 321;
+    width: 550px;
     z-index: 1;
     margin-left: 20px;
     display: flex;
     flex-direction: column;
-    background-color: #ffffff41;
-    border-radius: 8px;
     padding: 12px 16px;
 }
 
 #texto04 h2 {
-    width: 301px;
-    font-weight: bold;
+    width: 500px;
+    font-size: 40px;
+    /*font-weight: bold;*/
+    font-weight: 600;
     line-height: 1.1; 
     letter-spacing: 1px; 
     word-spacing: 2px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 #texto04 p {
+    font-size: 19px;
+    margin-top: 20px;
     margin-top: 15px;
-    width: 273px;
-    line-height: 1.1;
-    color: white;
+    line-height: 2rem;
+    color: rgb(0, 0, 0);
 }
 
 /* ========================================
     IMG de s04
 ======================================== */
 #s04 img {
-    position: absolute;
-    z-index: 0;
-    height: 701px;
-    width: 701px;
-    border-radius: 12px;
-
-    position: absolute;
-    right: 0;
-
-    -webkit-mask-mode: luminance;
-    mask-mode: luminance;
-
-    -webkit-mask-image: linear-gradient(to left, white 50%, black 100%);
-    mask-image: linear-gradient(to left, white 50%, black 100%);
-
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    -webkit-mask-position: left top;
-    mask-position: left top;
-    -webkit-mask-size: 100% 100%;
-    mask-size: 100% 100%;
+    height: 450px;
+    width: 450px;
 }
 
 /* ========================================
     buttom de s04
 ======================================== */
 #button04 {
-    margin: 15px 0px 3px;
-    display: flex;
+    margin-top: 40px;
     justify-content: center;
+    width: 100%;
 }
 
-#button04 .btn-donate{
-    margin-top: px;
-    width: 174px;
+#button04 button{
+    width: 100%;
     height: 66px;
+    border-style: solid;
+    border-color: var(--color-primary);
+    background-color: white;
+    color: var(--color-primary);
 }
 
-#button04 .btn-donate:hover {
-    width: 180px;
-    height: 68px;
-    box-shadow: 0 4px 12px rgba(0, 145, 224, 0.3);
-}
-
-#button04 .btn-donate:active {
-    width: 174px;
-    height: 66px;
-    box-shadow: 0 2px 6px rgba(0, 145, 224, 0.3);
+#button04 button:hover{
+    background-color: var(--color-primary);
+    color: white;
 }
