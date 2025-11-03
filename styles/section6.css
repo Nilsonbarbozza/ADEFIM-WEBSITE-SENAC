@@ -1,8 +1,7 @@
 .secao-titulo {
-    text-align: left; 
-    margin-bottom: 2rem;
-    font-size: 2rem;
-    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 /* Container de Colunas (Equivalente a .wp-block-columns .is-layout-flex) */
@@ -26,7 +25,7 @@
     border-radius: 8px;
     
     /* Sombra (Equivalente a gpbr-has-shadow-background) */
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
     
     display: flex;
     flex-direction: column;
@@ -55,9 +54,9 @@
 }
 
 .cartao-titulo {
-    font-size: 1.5rem;
-    margin-top: 0;
-    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.3rem;
     padding: 5px;
 }
 
@@ -73,12 +72,12 @@
 /* Descrição do Cartão */
 .cartao-descricao {
     font-size: 1rem;
-    color: #666666;
+    color: #000;
     line-height: 1.1;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     padding: 5px;
     
-    margin-top: 8px; 
+    margin-top: 0.5rem; 
 }
 
 /* Bloco de Botões (Equivalente a .wp-block-buttons) */
@@ -86,6 +85,7 @@
     display: flex;
     width: 100%;
     margin-top: auto;
+    
 }
 
 .bloco-botoes.justificar-centro {
@@ -100,7 +100,7 @@
     max-width: 50%; 
 }
 
-/* ===== EFEITO DE GLITTER AZUL ===== */
+/* ===== ESTILIZACÂO DO BOTÂO ===== */
 .bloco-botao-item.estilo-cta .botao-link {
     position: relative;
     display: block;
@@ -108,58 +108,17 @@
     padding: 0.75rem 1.5rem;
     text-decoration: none;
     
-    /* Gradiente azul com tons próximos do #0091E0 */
-    background: linear-gradient(45deg, #007fd6, #00a2ff, #4dc8ff);
+    /* cores e efeitos */
+    background: var(--color-button);
     background-size: 300% 300%;
     
     color: #ffffff;
     border: none;
-    border-radius: 8px;
+    border-radius: 4px;
     font-size: 0.95rem;
     font-weight: bold;
     cursor: pointer;
     overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Camada de brilho que atravessa o botão */
-.bloco-botao-item.estilo-cta .botao-link::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -75%;
-    width: 50%;
-    height: 100%;
-    
-    /* Reflexo azul translúcido */
-    background: linear-gradient(
-        120deg,
-        rgba(0, 145, 224, 0) 0%,
-        rgba(173, 216, 255, 0.7) 50%,
-        rgba(0, 145, 224, 0) 100%
-    );
-    
-    transform: skewX(-25deg);
-    transition: all 0.6s ease;
-}
-
-/* Animação de brilho do fundo */
-@keyframes glitter {
-    0% { background-position: 0 0; }
-    50% { background-position: 100% 100%; }
-    100% { background-position: 0 0; }
-}
-
-/* Hover com brilho azul em movimento */
-.bloco-botao-item.estilo-cta .botao-link:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 18px rgba(0, 145, 224, 0.6);
-    animation: glitter 2.5s linear infinite;
-}
-
-/* Movimento do reflexo */
-.bloco-botao-item.estilo-cta .botao-link:hover::before {
-    left: 125%;
 }
 
 .content {
@@ -192,6 +151,6 @@
     }
     
     .bloco-botao-item.largura-50 {
-        max-width: 80%;
+        max-width: 60%;
     }
 }
