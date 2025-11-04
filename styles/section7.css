@@ -23,7 +23,8 @@
 
 .titulo-direita {
     text-align: right;
-    margin: 0; 
+    margin: 0;
+    color: #666666; 
 }
 
 .fonte-roboto {
@@ -81,9 +82,9 @@
 
 /* Título do Post (h2) */
 .post-titulo {
-    font-size: 1.3rem;
+    font-size: 1.0rem;
     font-weight: bold;
-    padding: 0; 
+    padding: 5px; 
     margin-bottom: 0.5rem;
     line-height: 1.1;
 }
@@ -105,6 +106,7 @@
     color: #666666;
     font-size: 0.95rem;
     margin-top: initial; 
+    padding: 5px;
 }
 
 .resumo-texto {
