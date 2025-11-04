@@ -2,7 +2,7 @@
 #causas-campanhas {
   background-color: #f6f9fb;
   text-align: center;
-  padding: 80px 20px;
+  padding: 100px 20px;
 }
 
 #causas-campanhas .section-title {
@@ -17,6 +17,7 @@
   color: #333;
   margin-bottom: 50px;
 }
+
 
 .FEATURE03s-grid {
   display: grid;
@@ -87,4 +88,10 @@
   font-size: large;
   font-family: Helvetica, sans-serif;
   color: rgb(255, 255, 255);
+}
+
+#causas-campanhas h1{
+margin-bottom: 30px;
+margin-top: -55px;
+
 }
