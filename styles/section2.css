@@ -1,23 +1,40 @@
-/* START CAROUSEL */
+/* ========================================
+           CAROUSEL / SLIDE PRINCIPAL
+======================================== */
+
+/* Wrapper do carousel - ocupa 100% da altura da tela */
 .carousel_wrapper {
   position: relative;
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   overflow: hidden;
+  margin-top: 0; /* Cola no topo */
 }
 
+/* Container interno dos slides */
 .carousel_inner {
   display: flex;
   align-items: center;
   width: 100%;
-  height: 80%;
-  transition: transform .7s ease-in-out;
+  height: 100%;
+  transition: transform 0.7s ease-in-out;
 }
 
+/* Cada item do carousel */
 .carousel_item {
   position: relative;
   width: 100%;
+  height: 100%;
   flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Background das imagens */
+.carousel_background {
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 
 .carousel_background img {
@@ -25,24 +42,21 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
-  filter: brightness(50%); /* 100% é normal, valores menores escurecem */
+  filter: brightness(45%); /* Escurece a imagem pra destacar o texto */
 }
 
-@media (max-width: 768px) {
-  .carousel_background img {
-    object-position: center top;
-  }
-}
-
-/* CONTENT CAROUSEL */
+/* ========================================
+     CONTEÚDO DO CAROUSEL (Desktop)
+======================================== */
 .carousel_caption {
   position: absolute;
   bottom: 124px;
   left: 104px;
   max-width: 600px;
-  background-color: #00000041;
+  background-color: rgba(0, 0, 0, 0.25);
   padding: 12px 16px;
   border-radius: 8px;
+  z-index: 2;
 }
 
 .carousel_caption h2 {
@@ -51,7 +65,7 @@
   margin-bottom: 8px;
   color: white;
   line-height: 1.1;
-  letter-spacing: 1px; /* Aumenta o espaçamento entre letras */
+  letter-spacing: 1px;
   word-spacing: 2px;
 }
 
@@ -60,7 +74,7 @@
   font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 20px;
   color: white;
-  line-height: 1.1;
+  line-height: 1.4;
 }
 
 .btn_cta {
@@ -71,19 +85,33 @@
   text-decoration: none;
   font-weight: bold;
   border-radius: var(--border-radius);
+  transition: all 0.3s ease;
 }
 
-/* BOTÃO PASSAR */
+.btn_cta:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+/* ========================================
+        BOTÕES DE NAVEGAÇÃO
+======================================== */
 .carousel_btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #00000041;
+  background-color: rgba(0, 0, 0, 0.25);
   border: none;
   font-size: 2rem;
   color: white;
   padding: 8px 14px;
   cursor: pointer;
+  z-index: 3;
+  transition: background-color 0.3s ease;
+}
+
+.carousel_btn:hover {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .prev_btn {
@@ -94,7 +122,9 @@
   right: 10px;
 }
 
-/* INDICADORES SLIDE */
+/* ========================================
+          INDICADORES DO SLIDE
+======================================== */
 .carousel_indicators {
   position: absolute;
   bottom: 25px;
@@ -102,6 +132,7 @@
   transform: translateX(-50%);
   display: flex;
   gap: 10px;
+  z-index: 3;
 }
 
 .indicator {
@@ -110,8 +141,152 @@
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.4);
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.indicator:hover {
+  background: rgba(255, 255, 255, 0.7);
 }
 
 .indicator.active {
   background: #fff;
+  width: 30px; /* Indicador ativo fica mais largo */
+  border-radius: 6px;
+}
+
+/* ========================================
+     RESPONSIVIDADE - MOBILE
+======================================== */
+@media (max-width: 768px) {
+  
+  /* Carousel ocupa a tela toda, considerando a altura da nav */
+  .carousel_wrapper {
+    width: 100vh;
+    height: 100vh;
+    margin-top: 70px; /* Altura da nav mobile */
+  }
+
+  /* Item do carousel vira flex column */
+  .carousel_item {
+    flex-direction: column;
+  }
+
+  /* Background da imagem ocupa 60% da altura */
+  .carousel_background {
+    width: 100%;
+    height: 60%;
+    min-height: 300px;
+  }
+
+  .carousel_background img {
+    object-position: center center;
+    filter: brightness(60%);
+  }
+
+  /* ========================================
+       CAPTION VAI PRA BAIXO DA IMAGEM
+  ======================================== */
+  .carousel_caption {
+    position: relative; /* Não fica mais sobreposto */
+    bottom: auto;
+    left: auto;
+    width: 100%;
+    max-width: 100%;
+    height: 40%; /* Ocupa o resto da altura */
+    background-color: #ffffff; /* Fundo branco */
+    padding: 30px 20px;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .carousel_caption h2 {
+    font-size: 1.5rem;
+    color: #000000; /* Texto preto no fundo branco */
+    margin-bottom: 12px;
+    line-height: 1.3;
+  }
+
+  .carousel_caption p {
+    font-size: 1rem;
+    color: #333333;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+
+  .btn_cta {
+    align-self: flex-start; /* Botão alinhado à esquerda */
+    padding: 12px 24px;
+    font-size: 0.95rem;
+  }
+
+  /* ========================================
+       BOTÕES DE NAVEGAÇÃO (Mobile)
+  ======================================== */
+  .carousel_btn {
+    font-size: 1.5rem;
+    padding: 6px 12px;
+    top: 30%; /* Posiciona na área da imagem */
+  }
+
+  .prev_btn {
+    left: 5px;
+  }
+
+  .next_btn {
+    right: 5px;
+  }
+
+  /* ========================================
+       INDICADORES (Mobile)
+  ======================================== */
+  .carousel_indicators {
+    bottom: auto;
+    top: 55%; /* Fica na transição entre imagem e texto */
+    transform: translate(-50%, -50%);
+    padding-bottom: 32px;
+  }
+
+  .indicator {
+    width: 10px;
+    height: 10px;
+  }
+
+  .indicator.active {
+    width: 24px;
+  }
+}
+
+/* ========================================
+     RESPONSIVIDADE - MOBILE PEQUENO
+======================================== */
+@media (max-width: 480px) {
+  
+  .carousel_wrapper {
+    margin-top: 70px;
+  }
+
+  .carousel_background {
+    height: 55%;
+  }
+
+  .carousel_caption {
+    height: 45%;
+    padding: 20px 15px;
+  }
+
+  .carousel_caption h2 {
+    font-size: 1.3rem;
+  }
+
+  .carousel_caption p {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
+
+  .btn_cta {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
 }
