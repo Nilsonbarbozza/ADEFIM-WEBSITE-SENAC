@@ -71,9 +71,13 @@
   #causas-campanhas .section-title {
     font-size: 1.8rem;
   }
+  #causas-campanhas {
+width: 100vh;
+
+  }
 
   .FEATURE03 {
-    width: 40vh;
+    width: 30vh;
     text-align: center;
   }
 }
