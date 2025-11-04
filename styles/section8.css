@@ -98,9 +98,8 @@
 
 @media (max-width: 768px) {
     .footer {
-        text-align: center;
-        padding-left: 30px;
-        padding-right: 30px;
+        width: 100vh;
+
     }
 
     .footer-grid {

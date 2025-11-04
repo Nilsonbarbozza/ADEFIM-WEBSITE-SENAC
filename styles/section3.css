@@ -61,12 +61,19 @@
   line-height: 1.6;
 }
 
+#causas-campanhas h1{
+  margin-bottom: 30px;
+  margin-top: -55px;
+  
+  }
+
 @media (max-width: 768px) {
   #causas-campanhas .section-title {
     font-size: 1.8rem;
   }
 
   .FEATURE03 {
+    width: 40vh;
     text-align: center;
   }
 }
@@ -77,21 +84,4 @@
 }
 
 
-.FEATURE03 button {
-  background-color: #3c46ff;
-  border-radius: 200px;
-  padding: 20px;
-  width: 200px;
-}
 
-.FEATURE03 button a {
-  font-size: large;
-  font-family: Helvetica, sans-serif;
-  color: rgb(255, 255, 255);
-}
-
-#causas-campanhas h1{
-margin-bottom: 30px;
-margin-top: -55px;
-
-}
