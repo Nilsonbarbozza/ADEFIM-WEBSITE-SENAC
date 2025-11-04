@@ -3,8 +3,7 @@
     display: flex;
     height: 701px;
     align-items: center;
-    justify-content:space-around;
-    max-width: 1200px;
+    justify-content: space-around;
     margin: 0 auto;
 }
 
@@ -24,14 +23,20 @@
 .texto05 h2 {
     width: 500px;
     font-size: 40px;
-    font-weight: bold;
     font-weight: 600;
-    line-height: 1.1; 
+    line-height: 1.1px; 
     letter-spacing: 1px; 
     word-spacing: 2px;
     color: rgb(0, 0, 0);
 }
 
+.containerText p {
+    font-size: 19px;
+    margin-top: 20px;
+    margin-top: 15px;
+    line-height: 2rem;
+    color: rgb(0, 0, 0);
+}
 .img {
     width: 570px;
     height: auto;
@@ -54,4 +59,22 @@
 #button04 button:hover{
     background-color: var(--color-primary);
     color: white;
+}
+
+/* RESPONSIVIDADE - TABLET */
+@media (max-width: 1024px) {
+    .containerBaseCol {
+        display: flex;
+        margin: 250px;
+        align-items: center;
+    }
+}
+
+/* RESPONSIVIDADE - Celular */
+@media (max-width: 480px) {
+    .containerBaseCol {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
