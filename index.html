@@ -10,37 +10,48 @@
 
 <body>
     <!-- ==========================================
-       FEATURE 01: HEADER - NAVEGAÇÃO PRINCIPAL
-       Responsável: [Nilson Barboza - Frontend]
-       Descrição: Header fixo com logo e menu de navegação
-       =========================================== -->
+   FEATURE 01: HEADER - NAVEGAÇÃO PRINCIPAL
+   Responsável: [Nilson Barboza - Frontend]
+   Descrição: Header fixo com logo e menu de navegação
+   =========================================== -->
     <header class="top-navigation navbar" id="header">
-        <!--CONTAINER 1: LOGO-->
+        <!-- CONTAINER 1: LOGO -->
         <a class="site-logo" href="#">
             <img alt="AdefimLogo" src="\src\assets\img\logo.png" />
         </a>
-        <!-- CONTAINER 2: >NAVEGAÇÃO PRINCIPAL -->
+
+        <!-- CONTAINER 3: MENU HAMBURGUER (Só aparece no mobile) -->
+        <button class="hamburger-menu" aria-label="Menu de navegação">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!-- CONTAINER 4: NAVEGAÇÃO PRINCIPAL -->
         <nav class="nav-menu" id="nav-menu">
             <ul>
-                <!-- ITEM 1: Informe-se
-                     Cor: #C1C1C1 | Font: Roboto 16px | Hover: Border 2px -->
+                <!-- ITEM 1: Informe-se -->
                 <li
                     class="nav-item menu-item menu-item-type-custom menu-item-object-custom menu-item-37848 menu-item-has-children">
-                    <a class="nav-link" href="">
+                    <a class="nav-link" href="#informe-se">
                         Informe-se
                     </a>
                 </li>
+                <!-- ITEM 2: Como ajudar -->
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Como ajudar</a>
+                    <a class="nav-link" href="#como-ajudar">Como ajudar</a>
                 </li>
+                <!-- ITEM 3: Notícias -->
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Notícias e histórias</a>
+                    <a class="nav-link" href="#noticias">Notícias e histórias</a>
                 </li>
+                <!-- ITEM 4: Sobre nós -->
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Sobre nós</a>
+                    <a class="nav-link" href="#sobre-nos">Sobre nós</a>
                 </li>
+                <!-- ITEM 5: Botão doar (Desktop) -->
                 <li class="nav-donate">
-                    <button class="btn btn-donate" role="link">
+                    <button class="btn btn-donate redirect-donate" role="link">
                         Doe agora
                     </button>
                 </li>
@@ -191,17 +202,17 @@
        Descrição: 3 cards de apoio com imagens e CTAs
        =========================================== -->
         <section class="content">
-            <div id="s04">
-                <img src="src/assets/img/Apoia.webp" alt="">
-                <div id="texto04">
+            <div id="s04"> <!--div pai-->
+                <img src="src/assets/img/Apoia.webp" alt="Nós apoie"> <!--imagem-->
+                <div id="texto04"> <!--texto da div-->
                     <h2>Nós ajude a criar sorrisos</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id dolore explicabo similique quo
-                        facilis laborum ut dolorem nisi possimus earum recusandae temporibus architecto voluptatum totam
-                        enim blanditiis doloribus, aspernatur harum.
+                    <p> 
+                        Cada contribuição nós ajuda a ter mais autonomia e acessibilidade. 
+                        Juntos, podemos transformar barreiras em caminhos e desafios em novas conquistas. Seu gesto faz a 
+                        diferença!
                     </p>
-                    <div id="button04">
-                        <button type="button" class="btn btn-donate">
+                    <div id="button04"> <!--butão-->
+                        <button type="button" class="btn btn-donate redirect-donate">
                             Faça uma Doação
                         </button>
                     </div>
@@ -210,59 +221,31 @@
         </section>
 
         <!-- ==========================================
-           FEATURE 04: SECTION - APOIE UMA CAUSA
-           Responsável: [NOME DO DEV]
-           =========================================== -->
-        <!-- ==========================================
        FEATURE 05: SECTION - SOBRE O ADEFIM
        Responsável: [Samuel]
        Descrição: 2 blocos de texto + imagem (alternados)
        =========================================== -->
-        <section id="" class="FEATURE05">
-            <h1 class="h1">ADEFIM MOSSORÓ</h1>
-
-            <p><strong>ADEFIM</strong> (Associação de Defesa dos Direitos das Pessoas com Deficiência de Mossoró e
-                Região) é uma instituição sem fins lucrativos que atua há anos na defesa e promoção dos direitos das
-                pessoas com deficiência na região de Mossoró, Rio Grande do Norte.</p>
-            <br>
-            <p><strong>Missão:</strong> Promover a inclusão social, a acessibilidade e a garantia dos direitos das
-                pessoas com deficiência, trabalhando para construir uma sociedade mais justa e igualitária onde todas as
-                pessoas tenham suas potencialidades reconhecidas e valorizadas.</p>
-            <br>
-            <p>Fundada por familiares de pessoas com deficiência e por profissionais comprometidos com a causa, a ADEFIM
-                tornou-se referência no acolhimento, orientação e encaminhamento de casos relacionados aos direitos das
-                pessoas com deficiência, oferecendo suporte integral às famílias.</p>
-
-
-            <div class="whing">
-                <img src="src\assets\img\FOTOS DA ADEFIM E DE MARTHA 008.jpg" alt="Foto do ADEFIM">
-            </div>
-
-            <h2>Atuação e Projetos</h2>
-            <p>A associação desenvolve diversos projetos e ações voltados para a inclusão social e garantia de direitos.
-                Suas principais áreas de atuação incluem:</p>
-            <br>
-            <ul>
-                <li><strong>Advocacia e Orientação Jurídica:</strong> Assessoria jurídicia gratuita para famílias e
-                    pessoas com deficiência</li>
-                <br>
-                <li><strong>Inclusão no Mercado de Trabalho:</strong> Programas de capacitação profissional e inserção
-                    laboral</li>
-                <br>
-                <li><strong>Campanhas de Conscientização:</strong> Eventos educativos sobre acessibilidade e direitos
-                    humanos</li>
-                <br>
-                <li><strong>Apoio Psicossocial:</strong> Suporte Psicológico para pessoas com deficiência e seus
-                    familiares.</li>
-            </ul>
-            <br>
-            <p><strong>Visão:</strong> Ser reconhecida como principal referência na defesa dos direitos das pessoas com
-                deficiência na região Oeste do Rio Grande do Norte, promovendo transformação social e garatindo que toda
-                pessoa com deficiência tenha os seus direitos reservados.</p>
-            <br>
-            <p>Atráves de seu trabalho consistente e dedicado, a ADEFIM tem contribuído significativamente para a
-                construção de uma Mossoró mais inclusiva e acessível para todos.</p>
-        </section>
+            <section class="content">
+                <div class="containerBaseCol">
+                    <div class="containerText">
+                        <h1>Faça parte dessa história!</h1>
+                        <p>
+                            A ADEFIM é uma organização da sociedade civil de atuação autônoma e independente,
+                            sem fins lucrativos, que se dedica à defesa, promoção e garantia dos direitos das
+                            pessoas com deficiência. Fundada com o propósito
+                            de combater a exclusão e as desigualdades, a instituição atua de
+                            forma estratégica e comprometida com a construção de uma sociedade
+                            verdadeiramente acessível, justa e inclusiva.
+                        </p>
+                        <div id="button04">
+                            <button type="button" class="btn btn-donate">
+                                Saiba como ajudar!
+                            </button>
+                        </div>
+                    </div>
+                    <img class="img" src="src\assets\img\Local.png" alt="">
+                </div>
+            </section>
         <!-- ==========================================
        FEATURE 06: SECTION - Ajude a construir um futuro melhor
        Responsável: [Dylhermando]
@@ -539,7 +522,7 @@
             <div class="footer-col">
                 <h3 class="footer-title">Horário de Atendimento</h3>
                 <p>Segunda a Sexta-feira<br>das 8h às 12h e das 14h às 17h</p>
-                <button class="btn btn-donate" role="link">Doe agora</button>
+                <button class="btn btn-donate redirect-donate" role="link">Doe agora</button>
             </div>
 
         </div>
@@ -564,5 +547,6 @@
 
 <!--SCRIPTS-->
 <script src="/js/carousel.js"></script>
-
+<script src="js/main.js"></script>
+<script src="/js/header.js"></script>
 </html>
