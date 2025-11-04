@@ -52,7 +52,6 @@ VARIÁVEIS CSS - ROOT
     --spacing-md: 12px;
     --spacing-lg: 16px;
     --spacing-xl: 24px;
-
 }
 
 /* ========================================
@@ -64,25 +63,106 @@ VARIÁVEIS CSS - ROOT
     box-sizing: border-box;
 }
 
+/* ========================================
+    HTML E BODY - BASE 100% DA TELA
+======================================== */
+html {
+    /* Garante que o HTML ocupe 100% da altura */
+    height: 100%;
+    /* Scroll suave pros links âncora */
+    scroll-behavior: smooth;
+}
+
 body {
+    /* Body também 100% da altura */
+    min-height: 100vh;
+    width: 100%;
+    /* Remove qualquer scroll horizontal indesejado */
+    overflow-x: hidden;
+    /* Fonte e cores padrão */
     font-family: var(--font-family);
     font-size: var(--font-size-base);
     color: var(--color-text-dark);
-    line-height: 1.1;
+    line-height: 1.6;
+    /* Background padrão */
+    background-color: var(--bg-primary);
+    /* Evita quebra de layout com position fixed */
+    position: relative;
 }
 
+/* ========================================
+           LINKS E LISTAS
+======================================== */
 a {
     text-decoration: none;
     color: inherit;
+    /* Melhora a área de clique em mobile */
+    display: inline-block;
 }
 
 ul, ol {
     list-style: none;
 }
 
+/* ========================================
+           BOTÕES
+======================================== */
 button {
     border: none;
     background: none;
     cursor: pointer;
     font-family: inherit;
+    /* Remove outline padrão mas mantém acessibilidade */
+    outline: none;
+}
+
+button:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+/* ========================================
+           IMAGENS E MÍDIA
+======================================== */
+img, 
+video {
+    /* Impede que imagens quebrem o layout */
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ========================================
+    CONTAINER PRINCIPAL (Opcional)
+    Use essa classe no main ou wrapper principal
+======================================== */
+.main-container {
+    width: 100%;
+    min-height: 100vh;
+    /* Espaço pro header fixo não cobrir conteúdo */
+    padding-top: var(--header-height);
+}
+
+/* ========================================
+           UTILITÁRIOS DE OVERFLOW
+======================================== */
+/* Previne scroll quando menu mobile tá aberto */
+body.no-scroll {
+    overflow: hidden;
+    height: 100vh;
+}
+
+/* ========================================
+    CORREÇÃO MOBILE - VIEWPORT HEIGHT
+======================================== */
+@media (max-width: 768px) {
+    /* Ajusta pro header mobile */
+    .main-container {
+        padding-top: 70px;
+    }
+    
+    /* Garante que o body não tenha espaços estranhos */
+    body {
+        -webkit-overflow-scrolling: touch;
+    }
 }

@@ -2,7 +2,7 @@
 #causas-campanhas {
   background-color: #f6f9fb;
   text-align: center;
-  padding: 80px 20px;
+  padding: 100px 20px;
 }
 
 #causas-campanhas .section-title {
@@ -17,6 +17,7 @@
   color: #333;
   margin-bottom: 50px;
 }
+
 
 .FEATURE03s-grid {
   display: grid;
@@ -60,12 +61,23 @@
   line-height: 1.6;
 }
 
+#causas-campanhas h1{
+  margin-bottom: 30px;
+  margin-top: -55px;
+  
+  }
+
 @media (max-width: 768px) {
   #causas-campanhas .section-title {
     font-size: 1.8rem;
   }
+  #causas-campanhas {
+width: 100vh;
+
+  }
 
   .FEATURE03 {
+    width: 30vh;
     text-align: center;
   }
 }
@@ -76,15 +88,4 @@
 }
 
 
-.FEATURE03 button {
-  background-color: #3c46ff;
-  border-radius: 200px;
-  padding: 20px;
-  width: 200px;
-}
 
-.FEATURE03 button a {
-  font-size: large;
-  font-family: Helvetica, sans-serif;
-  color: rgb(255, 255, 255);
-}

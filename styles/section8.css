@@ -9,7 +9,6 @@
     border-top: 4px solid var(--color-primary);
     padding-left: 70px;
     padding-right: 70px;
-    box-shadow: 0 33px 99px rgba(0, 0, 255, 20);
 }
 
 .footer-grid {
@@ -78,10 +77,29 @@
     transform: translateY(-2px);
 }
 
-/* Responsividade */
+/* ========================================
+           RESPONSIVIDADE
+======================================== */
+
+@media (max-width: 1024px) {
+    .footer {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .footer-grid {
+        gap: var(--spacing-lg);
+    }
+
+    .footer-title {
+        font-size: 1.1rem;
+    }
+}
+
 @media (max-width: 768px) {
     .footer {
-        text-align: center;
+        width: 100vh;
+
     }
 
     .footer-grid {
@@ -99,11 +117,31 @@
     }
 }
 
+@media (max-width: 480px) {
+    .footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .footer-title {
+        font-size: 1rem;
+    }
+
+    .footer p,
+    .footer li {
+        font-size: 0.875rem;
+    }
+
+    .footer .btn-donate {
+        font-size: 0.9rem;
+        padding: 10px 0;
+    }
+}
+
 .footer img {
     width: 20px;
-    height: 20px;
-    margin-left: 10px;
     margin-bottom: -6px;
+    margin-right: 7px;
 }
 
 .footer hr {
