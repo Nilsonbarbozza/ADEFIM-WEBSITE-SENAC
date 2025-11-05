@@ -68,7 +68,7 @@
     padding-right: var(--nav-padding-right);
 }
 
-.nav-menu>ul {
+.nav-menu> ul {
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -152,8 +152,7 @@
 }
 
 .btn-donate:hover {
-    opacity: 0.9;
-    transform: translateY(-2px);
+    background-color: var(--color-primary-hover);
 }
 
 /* ========================================
@@ -163,8 +162,8 @@
     display: none;
     flex-direction: column;
     justify-content: space-between;
-    width: 30px;
-    height: 24px;
+    width: 50px;
+    height: 34px;
     background: transparent;
     border: none;
     cursor: pointer;
@@ -175,8 +174,8 @@
 /* As 3 linhas do hamburguer */
 .hamburger-menu span {
     width: 100%;
-    height: 3px;
-    background-color: #000000;
+    height: 4px;
+    background-color: var(--color-primary);
     border-radius: 2px;
     transition: all 0.3s ease;
 }
@@ -215,15 +214,15 @@
     /* Header sempre com background branco no mobile */
     .top-navigation {
         background-color: #ffffff;
-        height: 70px;
+        height: 110px;
         padding: 0 20px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 
     /* Logo menor e sem margem */
     .site-logo {
-        width: 140px;
-        height: 50px;
+        width: 180px;
+        height: 80px;
         margin-left: 0;
         padding: 0;
     }
@@ -233,14 +232,6 @@
         display: flex;
         order: 3; /* Fica por último (depois do botão) */
         margin-left: 15px;
-    }
-
-    /* Botão doar fica visível ao lado do hamburguer */
-    .nav-donate {
-        display: block;
-        margin-left: auto;
-        margin-right: 0;
-        order: 2; /* Fica entre logo e hamburguer */
     }
 
     .btn-donate {
@@ -253,7 +244,7 @@
     /* Menu de navegação vira fullscreen dropdown */
     .nav-menu {
         position: fixed;
-        top: 70px;
+        top: 100px;
         left: 0;
         width: 100%;
         height: calc(100vh - 70px);
@@ -297,7 +288,7 @@
         text-shadow: none;
         justify-content: flex-start;
         padding: 0 20px;
-        font-size: 16px;
+        font-size: 32px;
     }
 
     .nav-link:hover {

@@ -1,3 +1,7 @@
+.contentbase6 {
+    background-color: var(--color-section-background);
+    padding: 0px 80px 40px 80px;
+}
 .secao-titulo {
     text-align: center;
     margin-top: 30px;
@@ -143,14 +147,29 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
+
+    .contentbase6 {
+        width: 100vh;
+        padding: 160px 80px 20px 80px;
+        margin-top: 200px;
+    }
     .coluna-cta {
         width: 100%;
         flex-basis: 100%;
         margin-bottom: 15px;
     }
+
+    .cartao-titulo a {
+        font-size: 3rem;
+    }
+
+    .cartao-descricao{
+        font-size: 1.5rem;
+    }
     
     .bloco-botao-item.largura-50 {
         max-width: 60%;
+        padding-bottom: 24px;
     }
 }

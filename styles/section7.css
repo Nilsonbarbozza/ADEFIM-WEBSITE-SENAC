@@ -1,3 +1,8 @@
+.contentbase7 {
+    background-color: var(--color-section-background);
+    padding: 20px 80px 40px 80px;
+}
+
 .bloco-colunas {
     display: flex;
     justify-content: space-between; 
@@ -31,7 +36,6 @@
     font-family: 'Roboto', sans-serif;
 }
 
-
 .tamanho-medio {
     font-size: 1.1em; 
 }
@@ -43,13 +47,9 @@
 
 /* Container da Grade (Lista de Posts) */
 .lista-posts.grade-4-colunas {
-    
     display: grid;
     gap: 1.5rem; 
-    
     grid-template-columns: repeat(4, 1fr);
-    
-    /* Limpeza básica de lista */
     list-style: none;
     padding: 0;
     margin: 0;
@@ -72,21 +72,21 @@
     margin: 0; 
     margin-bottom: 1rem;
     display: block;
-    object-fit: contain;
 }
 
 .post-imagem-destacada .imagem-post {
     width: 100%;
     height: 200px; 
+    object-fit: cover;
 }
 
-/* Título do Post (h2) */
+/* Título do Post (h3) */
 .post-titulo {
     font-size: 1.0rem;
     font-weight: bold;
     padding: 5px; 
     margin-bottom: 0.5rem;
-    line-height: 1.1;
+    line-height: 1.3;
 }
 
 .post-titulo a {
@@ -101,12 +101,10 @@
 
 /* Resumo (Excerpt) e Link */
 .post-resumo {
-    
-    padding: 0;
+    padding: 5px;
     color: #666666;
     font-size: 0.95rem;
     margin-top: initial; 
-    padding: 5px;
 }
 
 .resumo-texto {
@@ -126,6 +124,7 @@
 .resumo-link-saiba-mais:hover {
     text-decoration: underline;
 }
+
 .content {
     padding: var(--spacing-xl);
     max-width: 1200px;
@@ -137,16 +136,80 @@
     RESPONSIVIDADE DA GRADE
 ======================================== */
 
-
+/* Tablets */
 @media (max-width: 1024px) {
+    .contentbase7 {
+        padding: 20px 40px 40px 40px;
+    }
+    
     .lista-posts.grade-4-colunas {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-
-@media (max-width: 600px) {
+/* Mobile */
+@media (max-width: 480px) {
+    .contentbase7 {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        width: 100vh;
+    }
+    
+    .bloco-colunas {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .titulo-esquerda {
+        font-size: 2rem;
+        text-align: start;
+    }
+    
+    .titulo-direita {
+        text-align: end;
+    }
+    
     .lista-posts.grade-4-colunas {
         grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    /* Card ocupa 100% da largura disponível */
+    .item-post {
+        width: 100%;
+    }
+    
+    /* Imagem ocupa 100% do card */
+    .post-imagem-destacada .imagem-post {
+        width: 100%;
+        height: auto;
+        min-height: 200px;
+        object-fit: cover;
+    }
+    
+    /* Título do card - 3rem */
+    .post-titulo {
+        font-size: 3rem;
+        padding: 15px;
+        line-height: 1.2;
+    }
+    
+    /* Parágrafo - 1.5rem */
+    .post-resumo {
+        font-size: 1.5rem;
+        padding: 15px;
+    }
+    
+    .resumo-texto {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        line-height: 1.4;
+    }
+    
+    /* Link "Saiba mais" */
+    .resumo-link-saiba-mais {
+        font-size: 1.5rem;
+        margin-top: 1rem;
     }
 }

@@ -42,7 +42,7 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
-  filter: brightness(45%); /* Escurece a imagem pra destacar o texto */
+  filter: brightness(32%); /* Escurece a imagem pra destacar o texto */
 }
 
 /* ========================================
@@ -50,10 +50,9 @@
 ======================================== */
 .carousel_caption {
   position: absolute;
-  bottom: 124px;
+  bottom: 80px;
   left: 104px;
   max-width: 600px;
-  background-color: rgba(0, 0, 0, 0.25);
   padding: 12px 16px;
   border-radius: 8px;
   z-index: 2;
@@ -89,8 +88,7 @@
 }
 
 .btn_cta:hover {
-  opacity: 0.9;
-  transform: translateY(-2px);
+  background-color: var(--color-primary-hover);
 }
 
 /* ========================================
@@ -158,6 +156,20 @@
      RESPONSIVIDADE - MOBILE
 ======================================== */
 @media (max-width: 768px) {
+
+  .controlTextMobile h2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+  }
+
+  .controlmobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }	
   
   /* Carousel ocupa a tela toda, considerando a altura da nav */
   .carousel_wrapper {
@@ -174,7 +186,7 @@
   /* Background da imagem ocupa 60% da altura */
   .carousel_background {
     width: 100%;
-    height: 60%;
+    height: 80%;
     min-height: 300px;
   }
 
@@ -192,24 +204,25 @@
     left: auto;
     width: 100%;
     max-width: 100%;
-    height: 40%; /* Ocupa o resto da altura */
+    height: 20%; /* Ocupa o resto da altura */
     background-color: #ffffff; /* Fundo branco */
     padding: 30px 20px;
     border-radius: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
+    align-items: center;
   }
 
   .carousel_caption h2 {
-    font-size: 1.5rem;
+    font-size: 53px;
     color: #000000; /* Texto preto no fundo branco */
-    margin-bottom: 12px;
+    margin-bottom: 24px;
     line-height: 1.3;
   }
 
   .carousel_caption p {
-    font-size: 1rem;
+    font-size: 6rem;
     color: #333333;
     margin-bottom: 20px;
     line-height: 1.5;
@@ -262,6 +275,13 @@
      RESPONSIVIDADE - MOBILE PEQUENO
 ======================================== */
 @media (max-width: 480px) {
+
+  .controlTextMobile h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+  }
   
   .carousel_wrapper {
     margin-top: 70px;
@@ -273,20 +293,22 @@
 
   .carousel_caption {
     height: 45%;
-    padding: 20px 15px;
-  }
-
-  .carousel_caption h2 {
-    font-size: 1.3rem;
+    padding: 60px;
   }
 
   .carousel_caption p {
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     margin-bottom: 15px;
   }
 
   .btn_cta {
-    padding: 10px 20px;
-    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 300px;
+    height: 60px;
+    padding: 12px;
+    font-size: 1.5rem;
+    border-radius: var(--border-radius);
   }
 }

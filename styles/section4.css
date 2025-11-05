@@ -27,13 +27,16 @@
 /* ========================================
     basicos de s04
 ======================================== */
+
+.contentBase {
+    background-color: var(--color-light);
+    padding: 40px 80px 0px 80px;
+}
 #s04 {
     display: flex;
-    flex-direction: --direçao-s04;
-    justify-content:space-around;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    margin: 0 auto;
-    padding: 0px 50px;
 }
 /* ========================================
     Textos de s04
@@ -95,4 +98,41 @@
 #button04 button:hover{
     background-color: var(--color-primary);
     color: white;
+}
+
+@media (max-width: 768px) {
+    .contentBase {
+        width: 100vh;
+    }
+
+    #s04 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #s04 img  {
+        width: 700px;
+        height: auto;
+    }
+
+    #texto04 {
+        width: 700px;
+        margin: 0px;
+        padding-top: 24px;
+        align-items: center;
+    }
+
+    #texto04 h2 {
+        width: 700px;        ;
+        font-size: 3rem;
+    }
+
+    #texto04 p {
+        font-size: 1.5rem;
+    }
+
+    #button04 {
+        margin-top: 20px;
+    }
 }

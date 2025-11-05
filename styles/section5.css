@@ -1,7 +1,13 @@
 /* Css para a a feature 05*/
+
+.contentbase5 {
+    background-color: var(--color-light);
+    padding: 40px 80px 0px 80px;
+}
+
 .containerBaseCol {
     display: flex;
-    height: 701px;
+    height: 600px;
     align-items: center;
     justify-content: space-around;
     margin: 0 auto;
@@ -20,11 +26,12 @@
     padding: 12px 16px;
 }
 
-.texto05 h2 {
+.containerText h2 {
     width: 500px;
     font-size: 40px;
+    /*font-weight: bold;*/
     font-weight: 600;
-    line-height: 1.1px; 
+    line-height: var(--line-height); 
     letter-spacing: 1px; 
     word-spacing: 2px;
     color: rgb(0, 0, 0);
@@ -37,7 +44,7 @@
     line-height: 2rem;
     color: rgb(0, 0, 0);
 }
-.img {
+.imgAdefim {
     width: 570px;
     height: auto;
 }
@@ -62,19 +69,38 @@
 }
 
 /* RESPONSIVIDADE - TABLET */
-@media (max-width: 1024px) {
-    .containerBaseCol {
-        display: flex;
-        margin: 250px;
-        align-items: center;
-    }
-}
+@media (max-width: 768px) {
 
-/* RESPONSIVIDADE - Celular */
-@media (max-width: 480px) {
+    .contentbase5 {
+        width: 100vh;
+    }
+    
+    .containerText {
+        width: 700px;
+        margin-left: 0px;
+    }
+
     .containerBaseCol {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column-reverse;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .imgAdefim {
+        width: 700px;
+        height: auto;
+    }
+
+    .containerText h2 {
+        width: 700px;
+        font-size: 3rem;
+    }
+
+    .containerText p {
+        width: 700px;
+        font-size: 1.5rem;
     }
 }
